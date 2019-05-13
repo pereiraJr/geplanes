@@ -1,0 +1,245 @@
+#
+# An unexpected error has been detected by Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x6d9e9725, pid=5352, tid=5596
+#
+# Java VM: Java HotSpot(TM) Client VM (11.0-b15 mixed mode windows-x86)
+# Problematic frame:
+# V  [jvm.dll+0x139725]
+#
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x415ccc00):  VMThread [stack: 0x41680000,0x416d0000] [id=5596]
+
+siginfo: ExceptionCode=0xc0000005, reading address 0xa5980913
+
+Registers:
+EAX=0xa59808b3, EBX=0x003aac78, ECX=0x3651d83e, EDX=0x34d0d8e0
+ESP=0x416cfb9c, EBP=0x06710000, ESI=0x06c5a574, EDI=0x34d0d8e0
+EIP=0x6d9e9725, EFLAGS=0x00010216
+
+Top of Stack: (sp=0x416cfb9c)
+0x416cfb9c:   06c5a574 06d1ceec 06d1c7c4 6d9f7c5b
+0x416cfbac:   00000003 6dac5074 6dac5074 6d9e940a
+0x416cfbbc:   06d1c6e0 6d9e97ea 00000003 6da5f5b1
+0x416cfbcc:   6dae056c 6dac5074 003aac78 6da21c1b
+0x416cfbdc:   6dac5074 00000000 6dac5074 6dac5074
+0x416cfbec:   003aac78 6d959c11 00000001 00000002
+0x416cfbfc:   6dac5074 6dac5074 00000001 003aac78
+0x416cfc0c:   06710000 0b8a0000 6d95b84b 00000001 
+
+Instructions: (pc=0x6d9e9725)
+0x6d9e9715:   f7 fe ff ff 83 c4 08 8b 46 04 8d 48 08 8b 01 56
+0x6d9e9725:   ff 50 60 5f 5e c3 cc cc cc cc cc 8b 44 24 04 56 
+
+
+Stack: [0x41680000,0x416d0000],  sp=0x416cfb9c,  free space=318k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x139725]
+
+VM_Operation (0x41cfa60c): GenCollectFull, mode: safepoint, requested by thread 0x4167d000
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x42707400 JavaThread "Thread-5" [_thread_in_native, id=4524, stack(0x45670000,0x456c0000)]
+  0x42706800 JavaThread "Thread-4" [_thread_blocked, id=1448, stack(0x45620000,0x45670000)]
+  0x426db400 JavaThread "Store org.hibernate.cache.StandardQueryCache Expiry Thread" daemon [_thread_blocked, id=2612, stack(0x455d0000,0x45620000)]
+  0x426da400 JavaThread "Store org.hibernate.cache.StandardQueryCache Spool Thread" daemon [_thread_blocked, id=2692, stack(0x45580000,0x455d0000)]
+  0x426d7c00 JavaThread "Store org.hibernate.cache.UpdateTimestampsCache Expiry Thread" daemon [_thread_blocked, id=392, stack(0x45530000,0x45580000)]
+  0x426d5000 JavaThread "Store org.hibernate.cache.UpdateTimestampsCache Spool Thread" daemon [_thread_blocked, id=3692, stack(0x453e0000,0x45430000)]
+  0x42f44c00 JavaThread "Store br.com.linkcom.sined.geral.bean.Uf Expiry Thread" daemon [_thread_blocked, id=5528, stack(0x45390000,0x453e0000)]
+  0x42f35400 JavaThread "Store br.com.linkcom.sined.geral.bean.Uf Spool Thread" daemon [_thread_blocked, id=3432, stack(0x45340000,0x45390000)]
+  0x42f32c00 JavaThread "Store br.com.linkcom.sined.geral.bean.Colaboradortipo Expiry Thread" daemon [_thread_blocked, id=2196, stack(0x452f0000,0x45340000)]
+  0x42f32400 JavaThread "Store br.com.linkcom.sined.geral.bean.Colaboradortipo Spool Thread" daemon [_thread_blocked, id=2780, stack(0x452a0000,0x452f0000)]
+  0x42f24400 JavaThread "Store br.com.linkcom.sined.geral.bean.AgendamentoAcao Expiry Thread" daemon [_thread_blocked, id=2868, stack(0x45250000,0x452a0000)]
+  0x42f21c00 JavaThread "Store br.com.linkcom.sined.geral.bean.AgendamentoAcao Spool Thread" daemon [_thread_blocked, id=5112, stack(0x45200000,0x45250000)]
+  0x42f1dc00 JavaThread "Store br.com.linkcom.sined.geral.bean.Regimecontratacao Expiry Thread" daemon [_thread_blocked, id=1884, stack(0x451b0000,0x45200000)]
+  0x42f1cc00 JavaThread "Store br.com.linkcom.sined.geral.bean.Regimecontratacao Spool Thread" daemon [_thread_blocked, id=3592, stack(0x45160000,0x451b0000)]
+  0x42f1ac00 JavaThread "Store br.com.linkcom.sined.geral.bean.Tipooperacao Expiry Thread" daemon [_thread_blocked, id=2700, stack(0x45110000,0x45160000)]
+  0x42f1a000 JavaThread "Store br.com.linkcom.sined.geral.bean.Tipooperacao Spool Thread" daemon [_thread_blocked, id=5652, stack(0x450c0000,0x45110000)]
+  0x42f17000 JavaThread "Store br.com.linkcom.sined.geral.bean.Cbo Expiry Thread" daemon [_thread_blocked, id=808, stack(0x45070000,0x450c0000)]
+  0x42f16800 JavaThread "Store br.com.linkcom.sined.geral.bean.Cbo Spool Thread" daemon [_thread_blocked, id=4400, stack(0x45020000,0x45070000)]
+  0x42f11c00 JavaThread "Store br.com.linkcom.sined.geral.bean.Colaboradorformapagamento Expiry Thread" daemon [_thread_blocked, id=2836, stack(0x44fd0000,0x45020000)]
+  0x42f10c00 JavaThread "Store br.com.linkcom.sined.geral.bean.Colaboradorformapagamento Spool Thread" daemon [_thread_blocked, id=5500, stack(0x44f80000,0x44fd0000)]
+  0x42f0bc00 JavaThread "Store br.com.linkcom.sined.geral.bean.Tipoaviso Expiry Thread" daemon [_thread_blocked, id=4528, stack(0x44f30000,0x44f80000)]
+  0x42f0f000 JavaThread "Store br.com.linkcom.sined.geral.bean.Tipoaviso Spool Thread" daemon [_thread_blocked, id=5252, stack(0x44ee0000,0x44f30000)]
+  0x42f06400 JavaThread "Store br.com.linkcom.sined.geral.bean.Sexo Expiry Thread" daemon [_thread_blocked, id=2192, stack(0x44e90000,0x44ee0000)]
+  0x42f05000 JavaThread "Store br.com.linkcom.sined.geral.bean.Sexo Spool Thread" daemon [_thread_blocked, id=3188, stack(0x44e40000,0x44e90000)]
+  0x42f02400 JavaThread "Store br.com.linkcom.sined.geral.bean.Tipoinscricao Expiry Thread" daemon [_thread_blocked, id=2884, stack(0x44df0000,0x44e40000)]
+  0x42f02000 JavaThread "Store br.com.linkcom.sined.geral.bean.Tipoinscricao Spool Thread" daemon [_thread_blocked, id=2548, stack(0x44da0000,0x44df0000)]
+  0x42efd800 JavaThread "Store br.com.linkcom.sined.geral.bean.Entidadedepartamentostatus Expiry Thread" daemon [_thread_blocked, id=852, stack(0x44d50000,0x44da0000)]
+  0x42f14c00 JavaThread "Store br.com.linkcom.sined.geral.bean.Entidadedepartamentostatus Spool Thread" daemon [_thread_blocked, id=4220, stack(0x44d00000,0x44d50000)]
+  0x42320400 JavaThread "Store br.com.linkcom.sined.geral.bean.Telefonetipo Expiry Thread" daemon [_thread_blocked, id=3016, stack(0x44cb0000,0x44d00000)]
+  0x4231f400 JavaThread "Store br.com.linkcom.sined.geral.bean.Telefonetipo Spool Thread" daemon [_thread_blocked, id=2472, stack(0x44c60000,0x44cb0000)]
+  0x41fbb400 JavaThread "Store br.com.linkcom.sined.geral.bean.Arquivobancariotipo Expiry Thread" daemon [_thread_blocked, id=4468, stack(0x44c10000,0x44c60000)]
+  0x41fbac00 JavaThread "Store br.com.linkcom.sined.geral.bean.Arquivobancariotipo Spool Thread" daemon [_thread_blocked, id=5240, stack(0x44bc0000,0x44c10000)]
+  0x41fb6800 JavaThread "Store br.com.linkcom.sined.geral.bean.Emailtipo Expiry Thread" daemon [_thread_blocked, id=5960, stack(0x44b70000,0x44bc0000)]
+  0x42326400 JavaThread "Store br.com.linkcom.sined.geral.bean.Emailtipo Spool Thread" daemon [_thread_blocked, id=5264, stack(0x44b20000,0x44b70000)]
+  0x42ec5400 JavaThread "Store br.com.linkcom.sined.geral.bean.Requisicaostatus Expiry Thread" daemon [_thread_blocked, id=1840, stack(0x44ad0000,0x44b20000)]
+  0x42ec4800 JavaThread "Store br.com.linkcom.sined.geral.bean.Requisicaostatus Spool Thread" daemon [_thread_blocked, id=3092, stack(0x44a80000,0x44ad0000)]
+  0x41c5e800 JavaThread "Store br.com.linkcom.sined.geral.bean.Interacaotipo Expiry Thread" daemon [_thread_blocked, id=5536, stack(0x44a30000,0x44a80000)]
+  0x42f03800 JavaThread "Store br.com.linkcom.sined.geral.bean.Interacaotipo Spool Thread" daemon [_thread_blocked, id=3500, stack(0x449e0000,0x44a30000)]
+  0x42302800 JavaThread "Store br.com.linkcom.sined.geral.bean.Arquivobancariosituacao Expiry Thread" daemon [_thread_blocked, id=5844, stack(0x44990000,0x449e0000)]
+  0x41c67400 JavaThread "Store br.com.linkcom.sined.geral.bean.Arquivobancariosituacao Spool Thread" daemon [_thread_blocked, id=4124, stack(0x44940000,0x44990000)]
+  0x42ebe800 JavaThread "Store br.com.linkcom.sined.geral.bean.Formapagamento Expiry Thread" daemon [_thread_blocked, id=3008, stack(0x448f0000,0x44940000)]
+  0x42ebdc00 JavaThread "Store br.com.linkcom.sined.geral.bean.Formapagamento Spool Thread" daemon [_thread_blocked, id=3920, stack(0x448a0000,0x448f0000)]
+  0x42eb8800 JavaThread "Store br.com.linkcom.sined.geral.bean.Emprestimostatus Expiry Thread" daemon [_thread_blocked, id=908, stack(0x44850000,0x448a0000)]
+  0x42eb7800 JavaThread "Store br.com.linkcom.sined.geral.bean.Emprestimostatus Spool Thread" daemon [_thread_blocked, id=5948, stack(0x44800000,0x44850000)]
+  0x42e9c400 JavaThread "Store br.com.linkcom.sined.geral.bean.Dirf Expiry Thread" daemon [_thread_blocked, id=3712, stack(0x447b0000,0x44800000)]
+  0x42e9b400 JavaThread "Store br.com.linkcom.sined.geral.bean.Dirf Spool Thread" daemon [_thread_blocked, id=6020, stack(0x44760000,0x447b0000)]
+  0x42e94000 JavaThread "Store br.com.linkcom.sined.geral.bean.Etnia Expiry Thread" daemon [_thread_blocked, id=5152, stack(0x44710000,0x44760000)]
+  0x42e93800 JavaThread "Store br.com.linkcom.sined.geral.bean.Etnia Spool Thread" daemon [_thread_blocked, id=3316, stack(0x446c0000,0x44710000)]
+  0x42e72000 JavaThread "Store br.com.linkcom.sined.geral.bean.Frequencia Expiry Thread" daemon [_thread_blocked, id=4372, stack(0x44670000,0x446c0000)]
+  0x42e73800 JavaThread "Store br.com.linkcom.sined.geral.bean.Frequencia Spool Thread" daemon [_thread_blocked, id=4032, stack(0x44620000,0x44670000)]
+  0x42e70000 JavaThread "Store br.com.linkcom.sined.geral.bean.Propostasituacao Expiry Thread" daemon [_thread_blocked, id=6068, stack(0x445d0000,0x44620000)]
+  0x42e6fc00 JavaThread "Store br.com.linkcom.sined.geral.bean.Propostasituacao Spool Thread" daemon [_thread_blocked, id=5048, stack(0x44580000,0x445d0000)]
+  0x42e5f800 JavaThread "Store br.com.linkcom.sined.geral.bean.Tipotaxa Expiry Thread" daemon [_thread_blocked, id=4584, stack(0x44530000,0x44580000)]
+  0x42e5f000 JavaThread "Store br.com.linkcom.sined.geral.bean.Tipotaxa Spool Thread" daemon [_thread_blocked, id=1300, stack(0x444e0000,0x44530000)]
+  0x42eea000 JavaThread "Store br.com.linkcom.sined.geral.bean.Materialclasse Expiry Thread" daemon [_thread_blocked, id=5544, stack(0x44490000,0x444e0000)]
+  0x42ee9400 JavaThread "Store br.com.linkcom.sined.geral.bean.Materialclasse Spool Thread" daemon [_thread_blocked, id=5560, stack(0x44440000,0x44490000)]
+  0x42eeec00 JavaThread "Store br.com.linkcom.sined.geral.bean.Planopagamento Expiry Thread" daemon [_thread_blocked, id=5612, stack(0x443f0000,0x44440000)]
+  0x42e5d400 JavaThread "Store br.com.linkcom.sined.geral.bean.Planopagamento Spool Thread" daemon [_thread_blocked, id=4532, stack(0x443a0000,0x443f0000)]
+  0x42907400 JavaThread "Store br.com.linkcom.sined.geral.bean.Tipodocumentomilitar Expiry Thread" daemon [_thread_blocked, id=6080, stack(0x44350000,0x443a0000)]
+  0x42906000 JavaThread "Store br.com.linkcom.sined.geral.bean.Tipodocumentomilitar Spool Thread" daemon [_thread_blocked, id=3364, stack(0x44300000,0x44350000)]
+  0x42ee8000 JavaThread "Store br.com.linkcom.sined.geral.bean.Formacobranca Expiry Thread" daemon [_thread_blocked, id=1352, stack(0x442b0000,0x44300000)]
+  0x42ec1800 JavaThread "Store br.com.linkcom.sined.geral.bean.Formacobranca Spool Thread" daemon [_thread_blocked, id=4336, stack(0x44260000,0x442b0000)]
+  0x42820c00 JavaThread "Store br.com.linkcom.sined.geral.bean.Grauinstrucao Expiry Thread" daemon [_thread_blocked, id=4964, stack(0x44210000,0x44260000)]
+  0x42903800 JavaThread "Store br.com.linkcom.sined.geral.bean.Grauinstrucao Spool Thread" daemon [_thread_blocked, id=576, stack(0x441c0000,0x44210000)]
+  0x4281b800 JavaThread "Store br.com.linkcom.sined.geral.bean.Colaboradordeficiencia Expiry Thread" daemon [_thread_blocked, id=1296, stack(0x44170000,0x441c0000)]
+  0x4281ac00 JavaThread "Store br.com.linkcom.sined.geral.bean.Colaboradordeficiencia Spool Thread" daemon [_thread_blocked, id=4000, stack(0x44120000,0x44170000)]
+  0x42737000 JavaThread "Store br.com.linkcom.sined.geral.bean.Tipocarteiratrabalho Expiry Thread" daemon [_thread_blocked, id=5476, stack(0x440d0000,0x44120000)]
+  0x42736400 JavaThread "Store br.com.linkcom.sined.geral.bean.Tipocarteiratrabalho Spool Thread" daemon [_thread_blocked, id=5368, stack(0x44080000,0x440d0000)]
+  0x42ed4c00 JavaThread "Store br.com.linkcom.sined.geral.bean.Tipoconta Expiry Thread" daemon [_thread_blocked, id=5088, stack(0x44030000,0x44080000)]
+  0x42ed3c00 JavaThread "Store br.com.linkcom.sined.geral.bean.Tipoconta Spool Thread" daemon [_thread_blocked, id=4676, stack(0x43fe0000,0x44030000)]
+  0x42845000 JavaThread "Store br.com.linkcom.sined.geral.bean.Estadocivil Expiry Thread" daemon [_thread_blocked, id=4348, stack(0x43f90000,0x43fe0000)]
+  0x4283a400 JavaThread "Store br.com.linkcom.sined.geral.bean.Estadocivil Spool Thread" daemon [_thread_blocked, id=5696, stack(0x43f40000,0x43f90000)]
+  0x4286e400 JavaThread "Store br.com.linkcom.sined.geral.bean.Emprestimoitemstatus Expiry Thread" daemon [_thread_blocked, id=5728, stack(0x43ef0000,0x43f40000)]
+  0x42e91400 JavaThread "Store br.com.linkcom.sined.geral.bean.Emprestimoitemstatus Spool Thread" daemon [_thread_blocked, id=3020, stack(0x43ea0000,0x43ef0000)]
+  0x42834000 JavaThread "Store br.com.linkcom.sined.geral.bean.Periodicidade Expiry Thread" daemon [_thread_blocked, id=6088, stack(0x43e50000,0x43ea0000)]
+  0x43130400 JavaThread "Store br.com.linkcom.sined.geral.bean.Periodicidade Spool Thread" daemon [_thread_blocked, id=5996, stack(0x43e00000,0x43e50000)]
+  0x42832400 JavaThread "IdleRemover" daemon [_thread_blocked, id=5552, stack(0x43db0000,0x43e00000)]
+  0x42519400 JavaThread "JCA PoolFiller" [_thread_blocked, id=2620, stack(0x42d30000,0x42d80000)]
+  0x423cc000 JavaThread "Timer-1" daemon [_thread_blocked, id=3296, stack(0x42ce0000,0x42d30000)]
+  0x422ab800 JavaThread "HSQLDB Timer @bd327b" daemon [_thread_blocked, id=4900, stack(0x42c90000,0x42ce0000)]
+  0x41d31000 JavaThread "ContainerBackgroundProcessor[StandardEngine[jboss.web]]" daemon [_thread_blocked, id=4712, stack(0x42c40000,0x42c90000)]
+  0x415cb800 JavaThread "PooledInvokerAcceptor#0-4445" [_thread_in_native, id=3192, stack(0x42bf0000,0x42c40000)]
+  0x4164c400 JavaThread "RMI TCP Accept-4444" daemon [_thread_in_native, id=3328, stack(0x42ba0000,0x42bf0000)]
+  0x41d46400 JavaThread "TimeoutFactory-0" daemon [_thread_blocked, id=2908, stack(0x42b50000,0x42ba0000)]
+  0x421b5000 JavaThread "JBoss System Threads(1)-2" daemon [_thread_in_native, id=5592, stack(0x42af0000,0x42b40000)]
+  0x421a9400 JavaThread "GC Daemon" daemon [_thread_blocked, id=5320, stack(0x42aa0000,0x42af0000)]
+  0x421a7c00 JavaThread "RMI Reaper" [_thread_blocked, id=3544, stack(0x42a50000,0x42aa0000)]
+  0x42180800 JavaThread "RMI TCP Accept-1098" daemon [_thread_in_native, id=4552, stack(0x42a00000,0x42a50000)]
+  0x4219e400 JavaThread "JBoss System Threads(1)-1" daemon [_thread_in_native, id=4840, stack(0x429b0000,0x42a00000)]
+  0x42195000 JavaThread "ScannerThread" daemon [_thread_blocked, id=4404, stack(0x42960000,0x429b0000)]
+  0x4214b400 JavaThread "Timer-0" daemon [_thread_blocked, id=5648, stack(0x42910000,0x42960000)]
+  0x003a7400 JavaThread "DestroyJavaVM" [_thread_blocked, id=3548, stack(0x008c0000,0x00910000)]
+  0x4167d000 JavaThread "main" [_thread_blocked, id=5784, stack(0x41cb0000,0x41d00000)]
+  0x41635400 JavaThread "Low Memory Detector" daemon [_thread_blocked, id=2596, stack(0x41a10000,0x41a60000)]
+  0x41633000 JavaThread "CompilerThread0" daemon [_thread_blocked, id=5052, stack(0x419c0000,0x41a10000)]
+  0x4162a400 JavaThread "JDWP Command Reader" daemon [_thread_in_native, id=856, stack(0x41970000,0x419c0000)]
+  0x41623800 JavaThread "JDWP Event Helper Thread" daemon [_thread_blocked, id=3004, stack(0x41920000,0x41970000)]
+  0x41621400 JavaThread "JDWP Transport Listener: dt_socket" daemon [_thread_blocked, id=5984, stack(0x418d0000,0x41920000)]
+  0x41616400 JavaThread "Attach Listener" daemon [_thread_blocked, id=5444, stack(0x417c0000,0x41810000)]
+  0x415d0000 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=2752, stack(0x41770000,0x417c0000)]
+  0x41607800 JavaThread "Finalizer" daemon [_thread_blocked, id=3788, stack(0x41720000,0x41770000)]
+  0x415ce800 JavaThread "Reference Handler" daemon [_thread_blocked, id=6048, stack(0x416d0000,0x41720000)]
+
+Other Threads:
+=>0x415ccc00 VMThread [stack: 0x41680000,0x416d0000] [id=5596]
+  0x41637800 WatcherThread [stack: 0x41a60000,0x41ab0000] [id=4688]
+
+VM state:at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x003a6238] UNKNOWN - owner thread: 0x415ccc00
+[0x003a6698] UNKNOWN - owner thread: 0x4167d000
+
+Heap
+ def new generation   total 11776K, used 5999K [0x02990000, 0x03650000, 0x06710000)
+  eden space 10496K,  47% used [0x02990000, 0x02e6f4b0, 0x033d0000)
+  from space 1280K,  78% used [0x033d0000, 0x034cc8c8, 0x03510000)
+  to   space 1280K,   0% used [0x03510000, 0x03510000, 0x03650000)
+ tenured generation   total 156324K, used 104271K [0x06710000, 0x0ffb9000, 0x34990000)
+   the space 156324K,  66% used [0x06710000, 0x0cce3ed8, 0x0cce4000, 0x0ffb9000)
+ compacting perm gen  total 64512K, used 64511K [0x34990000, 0x38890000, 0x41190000)
+   the space 64512K,  99% used [0x34990000, 0x3888fff0, 0x38890000, 0x38890000)
+No shared spaces configured.
+
+Dynamic libraries:
+0x00400000 - 0x00424000 	C:\Arquivos de programas\Java\jdk1.6.0_10\bin\javaw.exe
+0x7c900000 - 0x7c9b6000 	C:\WINDOWS\system32\ntdll.dll
+0x7c800000 - 0x7c900000 	C:\WINDOWS\system32\kernel32.dll
+0x77f50000 - 0x77ffb000 	C:\WINDOWS\system32\ADVAPI32.dll
+0x77db0000 - 0x77e43000 	C:\WINDOWS\system32\RPCRT4.dll
+0x77f20000 - 0x77f31000 	C:\WINDOWS\system32\Secur32.dll
+0x7e360000 - 0x7e3f1000 	C:\WINDOWS\system32\USER32.dll
+0x77e50000 - 0x77e99000 	C:\WINDOWS\system32\GDI32.dll
+0x76360000 - 0x7637d000 	C:\WINDOWS\system32\IMM32.DLL
+0x7c340000 - 0x7c396000 	C:\Arquivos de programas\Java\jdk1.6.0_10\jre\bin\msvcr71.dll
+0x6d8b0000 - 0x6db06000 	C:\Arquivos de programas\Java\jdk1.6.0_10\jre\bin\client\jvm.dll
+0x76b20000 - 0x76b4e000 	C:\WINDOWS\system32\WINMM.dll
+0x6d330000 - 0x6d338000 	C:\Arquivos de programas\Java\jdk1.6.0_10\jre\bin\hpi.dll
+0x76bd0000 - 0x76bdb000 	C:\WINDOWS\system32\PSAPI.DLL
+0x6d420000 - 0x6d449000 	C:\Arquivos de programas\Java\jdk1.6.0_10\jre\bin\jdwp.dll
+0x6d750000 - 0x6d756000 	C:\Arquivos de programas\Java\jdk1.6.0_10\jre\bin\npt.dll
+0x6d860000 - 0x6d86c000 	C:\Arquivos de programas\Java\jdk1.6.0_10\jre\bin\verify.dll
+0x6d3d0000 - 0x6d3ef000 	C:\Arquivos de programas\Java\jdk1.6.0_10\jre\bin\java.dll
+0x6d8a0000 - 0x6d8af000 	C:\Arquivos de programas\Java\jdk1.6.0_10\jre\bin\zip.dll
+0x6d2a0000 - 0x6d2a7000 	C:\Arquivos de programas\Java\jdk1.6.0_10\jre\bin\dt_socket.dll
+0x71a70000 - 0x71a87000 	C:\WINDOWS\system32\WS2_32.dll
+0x77bf0000 - 0x77c48000 	C:\WINDOWS\system32\msvcrt.dll
+0x71a60000 - 0x71a68000 	C:\WINDOWS\system32\WS2HELP.dll
+0x71a10000 - 0x71a50000 	C:\WINDOWS\System32\mswsock.dll
+0x76f00000 - 0x76f27000 	C:\WINDOWS\system32\DNSAPI.dll
+0x76f90000 - 0x76f98000 	C:\WINDOWS\System32\winrnr.dll
+0x76f40000 - 0x76f6d000 	C:\WINDOWS\system32\WLDAP32.dll
+0x64000000 - 0x64025000 	C:\Arquivos de programas\Bonjour\mdnsNSP.dll
+0x76d40000 - 0x76d59000 	C:\WINDOWS\system32\Iphlpapi.dll
+0x76fa0000 - 0x76fa6000 	C:\WINDOWS\system32\rasadhlp.dll
+0x60b30000 - 0x60b88000 	C:\WINDOWS\system32\hnetcfg.dll
+0x71a50000 - 0x71a58000 	C:\WINDOWS\System32\wshtcpip.dll
+0x6d6c0000 - 0x6d6d3000 	C:\Arquivos de programas\Java\jdk1.6.0_10\jre\bin\net.dll
+0x6d610000 - 0x6d619000 	C:\Arquivos de programas\Java\jdk1.6.0_10\jre\bin\management.dll
+0x68000000 - 0x68036000 	C:\WINDOWS\system32\rsaenh.dll
+0x769a0000 - 0x76a55000 	C:\WINDOWS\system32\USERENV.dll
+0x5bcb0000 - 0x5bd05000 	C:\WINDOWS\system32\netapi32.dll
+0x6d6e0000 - 0x6d6e9000 	C:\Arquivos de programas\Java\jdk1.6.0_10\jre\bin\nio.dll
+0x6d0b0000 - 0x6d1e8000 	C:\Arquivos de programas\Java\jdk1.6.0_10\jre\bin\awt.dll
+0x72fb0000 - 0x72fd6000 	C:\WINDOWS\system32\WINSPOOL.DRV
+0x774c0000 - 0x775fe000 	C:\WINDOWS\system32\ole32.dll
+0x773b0000 - 0x774b3000 	C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.6028_x-ww_61e65202\comctl32.dll
+0x77ea0000 - 0x77f16000 	C:\WINDOWS\system32\SHLWAPI.dll
+
+VM Arguments:
+jvm_args: -Djboss.home=C:\java\jboss -Djava.library.path=C:\Arquivos de programas\Java\jdk1.6.0_10\bin -Djava.endorsed.dirs=C:\java\jboss\lib\endorsed -Xmx800m -XX:MaxPermSize=200M -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:2507 
+java_command: org.jboss.Main -c default -b 0.0.0.0
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Arquiv~1\Java\jdk1.6.0_04
+PATH=C:\Arquivos de programas\Java\jdk1.6.0_10\jre\bin;C:\oracle\product\10.2.0\client_2\bin;C:\oracle\product\10.2.0\client_1;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;
+USERNAME=Giovane
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 15 Stepping 13, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows XP Build 2600 Service Pack 3
+
+CPU:total 2 (2 cores per cpu, 1 threads per core) family 6 model 15 stepping 13, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3
+
+Memory: 4k page, physical 2088428k(232632k free), swap 4026404k(2007080k free)
+
+vm_info: Java HotSpot(TM) Client VM (11.0-b15) for windows-x86 JRE (1.6.0_10-b33), built on Sep 26 2008 01:00:43 by "java_re" with MS VC++ 7.1
+
+time: Thu Jul 28 15:24:09 2011
+elapsed time: 211 seconds
+

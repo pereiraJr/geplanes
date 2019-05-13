@@ -1,0 +1,163 @@
+#
+# An unexpected error has been detected by Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x6d8f6624, pid=3732, tid=3736
+#
+# Java VM: Java HotSpot(TM) Client VM (1.6.0_01-b06 mixed mode)
+# Problematic frame:
+# V  [jvm.dll+0x86624]
+#
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x1331ac00):  JavaThread "JDWP Transport Listener: dt_socket" daemon [_thread_in_vm, id=3736]
+
+siginfo: ExceptionCode=0xc0000005, reading address 0x00000005
+
+Registers:
+EAX=0x0f1773a8, EBX=0x00385110, ECX=0x00000001, EDX=0x00000000
+ESP=0x135ffbc0, EBP=0x135ffc04, ESI=0x1331ac00, EDI=0x00000001
+EIP=0x6d8f6624, EFLAGS=0x00010217
+
+Top of Stack: (sp=0x135ffbc0)
+0x135ffbc0:   6d9774b7 0f1773a8 6d4ce0fc 6d4d2ee8
+0x135ffbd0:   6d4d2ee8 1331ac00 1331ac00 00000000
+0x135ffbe0:   00000000 00000000 6d4c9511 00385110
+0x135ffbf0:   14109a58 135ffc03 6d4ce0fc 1331ace8
+0x135ffc00:   005fff70 6d4ce114 6d4cb3bc 14109a58
+0x135ffc10:   00000000 6d4ce55c 135ffc58 6d4ce0fc
+0x135ffc20:   6d4b6130 1331ace8 141099b8 135ffc68
+0x135ffc30:   135ffe04 6d4d2b10 00000089 00000000 
+
+Instructions: (pc=0x6d8f6624)
+0x6d8f6614:   c2 08 00 cc cc cc cc cc cc cc cc cc 8b 44 24 04
+0x6d8f6624:   8b 49 04 8b 50 10 83 c1 08 39 44 0a f8 75 05 b0 
+
+
+Stack: [0x135b0000,0x13600000),  sp=0x135ffbc0,  free space=318k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x86624]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x138b9400 JavaThread "http-0.0.0.0-8080-3" daemon [_thread_blocked, id=372]
+  0x13a25800 JavaThread "http-0.0.0.0-8080-2" daemon [_thread_blocked, id=1248]
+  0x13949c00 JavaThread "http-0.0.0.0-8080-1" daemon [_thread_blocked, id=912]
+  0x1426e400 JavaThread "TP-Monitor" daemon [_thread_blocked, id=3820]
+  0x1384f800 JavaThread "TP-Processor4" daemon [_thread_in_native, id=3900]
+  0x142f7000 JavaThread "TP-Processor3" daemon [_thread_blocked, id=3844]
+  0x142fe800 JavaThread "TP-Processor2" daemon [_thread_blocked, id=3836]
+  0x1336f000 JavaThread "TP-Processor1" daemon [_thread_blocked, id=3868]
+  0x142e8400 JavaThread "http-0.0.0.0-8080" daemon [_thread_in_native, id=3744]
+  0x13913400 JavaThread "JBossLifeThread" [_thread_blocked, id=3828]
+  0x1419fc00 JavaThread "JCA PoolFiller" [_thread_blocked, id=1616]
+  0x1418dc00 JavaThread "Timer-1" daemon [_thread_blocked, id=3852]
+  0x1418a000 JavaThread "HSQLDB Timer @1a80e5a" daemon [_thread_blocked, id=3824]
+  0x139e9400 JavaThread "ContainerBackgroundProcessor[StandardEngine[jboss.web]]" daemon [_thread_blocked, id=2396]
+  0x13e73800 JavaThread "PooledInvokerAcceptor#0-4445" [_thread_in_native, id=3804]
+  0x13e67400 JavaThread "RMI TCP Accept-4444" daemon [_thread_in_native, id=3796]
+  0x13817400 JavaThread "TimeoutFactory-0" daemon [_thread_blocked, id=3760]
+  0x13e5f400 JavaThread "JBoss System Threads(1)-2" daemon [_thread_in_native, id=3812]
+  0x13e3cc00 JavaThread "GC Daemon" daemon [_thread_blocked, id=3808]
+  0x13e35400 JavaThread "RMI Reaper" [_thread_blocked, id=3848]
+  0x13e57000 JavaThread "RMI TCP Accept-1098" daemon [_thread_in_native, id=3816]
+  0x13e4f800 JavaThread "JBoss System Threads(1)-1" daemon [_thread_in_native, id=3784]
+  0x13e34400 JavaThread "ScannerThread" daemon [_thread_blocked, id=3720]
+  0x13e05400 JavaThread "Timer-0" daemon [_thread_blocked, id=3792]
+  0x00386c00 JavaThread "DestroyJavaVM" [_thread_blocked, id=3748]
+  0x1332b800 JavaThread "Low Memory Detector" daemon [_thread_blocked, id=2948]
+  0x1332ac00 JavaThread "CompilerThread0" daemon [_thread_blocked, id=2280]
+  0x1331e400 JavaThread "JDWP Command Reader" daemon [_thread_blocked, id=3648]
+  0x1331cc00 JavaThread "JDWP Event Helper Thread" daemon [_thread_blocked, id=3716]
+=>0x1331ac00 JavaThread "JDWP Transport Listener: dt_socket" daemon [_thread_in_vm, id=3736]
+  0x1330fc00 JavaThread "Attach Listener" daemon [_thread_blocked, id=3768]
+  0x1330f000 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=2548]
+  0x132ffc00 JavaThread "Finalizer" daemon [_thread_blocked, id=3004]
+  0x132fb800 JavaThread "Reference Handler" daemon [_thread_blocked, id=1212]
+
+Other Threads:
+  0x132f8800 VMThread [id=3700]
+  0x1332d000 WatcherThread [id=996]
+
+VM state:synchronizing (normal execution)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x003856e0/0x00002f1c] Threads_lock - owner thread: 0x132f8800
+[0x00385880/0x00002edc] Heap_lock - owner thread: 0x138b9400
+
+Heap
+ def new generation   total 14208K, used 14207K [0x02960000, 0x038c0000, 0x038c0000)
+  eden space 12672K, 100% used [0x02960000, 0x035c0000, 0x035c0000)
+  from space 1536K,  99% used [0x03740000, 0x038bfff8, 0x038c0000)
+  to   space 1536K,   0% used [0x035c0000, 0x035c0000, 0x03740000)
+ tenured generation   total 189056K, used 189056K [0x038c0000, 0x0f160000, 0x0f160000)
+   the space 189056K, 100% used [0x038c0000, 0x0f160000, 0x0f160000, 0x0f160000)
+ compacting perm gen  total 30208K, used 30016K [0x0f160000, 0x10ee0000, 0x13160000)
+   the space 30208K,  99% used [0x0f160000, 0x10eb0060, 0x10eb0200, 0x10ee0000)
+No shared spaces configured.
+
+Dynamic libraries:
+0x00400000 - 0x00423000 	C:\java\jdk1.6.0_01\bin\javaw.exe
+0x7c900000 - 0x7c9b4000 	C:\WINDOWS\system32\ntdll.dll
+0x7c800000 - 0x7c8ff000 	C:\WINDOWS\system32\kernel32.dll
+0x77f50000 - 0x77ffb000 	C:\WINDOWS\system32\ADVAPI32.dll
+0x77db0000 - 0x77e41000 	C:\WINDOWS\system32\RPCRT4.dll
+0x7e360000 - 0x7e3f0000 	C:\WINDOWS\system32\USER32.dll
+0x77e50000 - 0x77e97000 	C:\WINDOWS\system32\GDI32.dll
+0x76360000 - 0x7637d000 	C:\WINDOWS\system32\IMM32.DLL
+0x7c340000 - 0x7c396000 	C:\java\jdk1.6.0_01\jre\bin\msvcr71.dll
+0x6d870000 - 0x6dab7000 	C:\java\jdk1.6.0_01\jre\bin\client\jvm.dll
+0x76b20000 - 0x76b4e000 	C:\WINDOWS\system32\WINMM.dll
+0x6d3c0000 - 0x6d3c8000 	C:\java\jdk1.6.0_01\jre\bin\hpi.dll
+0x76bd0000 - 0x76bdb000 	C:\WINDOWS\system32\PSAPI.DLL
+0x6d4b0000 - 0x6d4d9000 	C:\java\jdk1.6.0_01\jre\bin\jdwp.dll
+0x6d770000 - 0x6d776000 	C:\java\jdk1.6.0_01\jre\bin\npt.dll
+0x6d820000 - 0x6d82c000 	C:\java\jdk1.6.0_01\jre\bin\verify.dll
+0x6d460000 - 0x6d47f000 	C:\java\jdk1.6.0_01\jre\bin\java.dll
+0x6d860000 - 0x6d86f000 	C:\java\jdk1.6.0_01\jre\bin\zip.dll
+0x6d330000 - 0x6d337000 	C:\java\jdk1.6.0_01\jre\bin\dt_socket.dll
+0x71a70000 - 0x71a87000 	C:\WINDOWS\system32\WS2_32.dll
+0x77bf0000 - 0x77c48000 	C:\WINDOWS\system32\msvcrt.dll
+0x71a60000 - 0x71a68000 	C:\WINDOWS\system32\WS2HELP.dll
+0x71a10000 - 0x71a50000 	C:\WINDOWS\System32\mswsock.dll
+0x76f00000 - 0x76f27000 	C:\WINDOWS\system32\DNSAPI.dll
+0x76f90000 - 0x76f98000 	C:\WINDOWS\System32\winrnr.dll
+0x76f40000 - 0x76f6d000 	C:\WINDOWS\system32\WLDAP32.dll
+0x76fa0000 - 0x76fa6000 	C:\WINDOWS\system32\rasadhlp.dll
+0x60b30000 - 0x60b88000 	C:\WINDOWS\system32\hnetcfg.dll
+0x71a50000 - 0x71a58000 	C:\WINDOWS\System32\wshtcpip.dll
+0x6d620000 - 0x6d633000 	C:\java\jdk1.6.0_01\jre\bin\net.dll
+0x6d610000 - 0x6d619000 	C:\java\jdk1.6.0_01\jre\bin\management.dll
+0x146d0000 - 0x146f8000 	C:\WINDOWS\system32\rsaenh.dll
+0x769a0000 - 0x76a54000 	C:\WINDOWS\system32\USERENV.dll
+0x5bcb0000 - 0x5bd04000 	C:\WINDOWS\system32\netapi32.dll
+0x6d640000 - 0x6d649000 	C:\java\jdk1.6.0_01\jre\bin\nio.dll
+
+VM Arguments:
+jvm_args: -Djboss.home=C:\java\jboss -Djava.library.path=C:\java\jdk1.6.0_01\bin -Djava.endorsed.dirs=C:\java\jboss\lib\endorsed -Xmx200m -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:1124
+java_command: org.jboss.Main -c default
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\oracle\product\10.2.0\client\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\MATLAB7\bin\win32;
+USERNAME=Fabricio
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 15 Model 4 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows XP Build 2600 Service Pack 2
+
+CPU:total 2 family 15, cmov, cx8, fxsr, mmx, sse, sse2, ht
+
+Memory: 4k page, physical 1039596k(157864k free), swap 2504540k(1650920k free)
+
+vm_info: Java HotSpot(TM) Client VM (1.6.0_01-b06) for windows-x86, built on Mar 14 2007 00:24:02 by "java_re" with unknown MS VC++:1310
+

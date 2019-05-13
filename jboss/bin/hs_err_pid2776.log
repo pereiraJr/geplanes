@@ -1,0 +1,197 @@
+#
+# An unexpected error has been detected by Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x6d9e9407, pid=2776, tid=3544
+#
+# Java VM: Java HotSpot(TM) Client VM (11.0-b15 mixed mode windows-x86)
+# Problematic frame:
+# V  [jvm.dll+0x139407]
+#
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x415fe800):  VMThread [stack: 0x41680000,0x416d0000] [id=3544]
+
+siginfo: ExceptionCode=0xc0000005, reading address 0x00000063
+
+Registers:
+EAX=0x3581c99c, EBX=0x003aac98, ECX=0x3581c9b8, EDX=0x00000003
+ESP=0x416cfbbc, EBP=0x06710000, ESI=0x6dac5074, EDI=0x6dac5074
+EIP=0x6d9e9407, EFLAGS=0x00010206
+
+Top of Stack: (sp=0x416cfbbc)
+0x416cfbbc:   3581c99c 6d9e97ea 00000003 6da5f5b1
+0x416cfbcc:   6dae056c 6dac5074 003aac98 6da21c1b
+0x416cfbdc:   6dac5074 00000000 6dac5074 6dac5074
+0x416cfbec:   003aac98 6d959c11 00000001 00000002
+0x416cfbfc:   6dac5074 6dac5074 00000001 003aac98
+0x416cfc0c:   06710000 0b8a0000 6d95b84b 00000001
+0x416cfc1c:   00000000 00000001 00000002 6dac5074
+0x416cfc2c:   6dac5074 00010100 0000579e 00000000 
+
+Instructions: (pc=0x6d9e9407)
+0x6d9e93f7:   08 8b 08 8b 04 8a 8b 48 04 8b 51 08 83 c1 08 50
+0x6d9e9407:   ff 52 60 a1 98 04 ad 6d 83 38 00 75 dc c3 cc cc 
+
+
+Stack: [0x41680000,0x416d0000],  sp=0x416cfbbc,  free space=318k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x139407]
+
+VM_Operation (0x4425d738): GenCollectFull, mode: safepoint, requested by thread 0x4254f400
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x4330d400 JavaThread "http-0.0.0.0-8080-7" daemon [_thread_blocked, id=1272, stack(0x44670000,0x446c0000)]
+  0x4330e800 JavaThread "http-0.0.0.0-8080-6" daemon [_thread_blocked, id=1992, stack(0x44620000,0x44670000)]
+  0x41f9d400 JavaThread "DefaultQuartzScheduler_QuartzSchedulerThread" [_thread_blocked, id=3644, stack(0x445d0000,0x44620000)]
+  0x4252c800 JavaThread "DefaultQuartzScheduler_Worker-10" [_thread_blocked, id=2232, stack(0x44580000,0x445d0000)]
+  0x422ed400 JavaThread "DefaultQuartzScheduler_Worker-9" [_thread_blocked, id=1948, stack(0x44530000,0x44580000)]
+  0x41c47800 JavaThread "DefaultQuartzScheduler_Worker-8" [_thread_blocked, id=1688, stack(0x444e0000,0x44530000)]
+  0x421f4800 JavaThread "DefaultQuartzScheduler_Worker-7" [_thread_blocked, id=2868, stack(0x44490000,0x444e0000)]
+  0x431d9400 JavaThread "DefaultQuartzScheduler_Worker-6" [_thread_blocked, id=3480, stack(0x44440000,0x44490000)]
+  0x427e0400 JavaThread "DefaultQuartzScheduler_Worker-5" [_thread_blocked, id=2396, stack(0x443f0000,0x44440000)]
+  0x4268c800 JavaThread "DefaultQuartzScheduler_Worker-4" [_thread_blocked, id=2524, stack(0x443a0000,0x443f0000)]
+  0x42548800 JavaThread "DefaultQuartzScheduler_Worker-3" [_thread_blocked, id=1480, stack(0x44350000,0x443a0000)]
+  0x42301800 JavaThread "DefaultQuartzScheduler_Worker-2" [_thread_blocked, id=2536, stack(0x44300000,0x44350000)]
+  0x423c3000 JavaThread "DefaultQuartzScheduler_Worker-1" [_thread_blocked, id=2496, stack(0x442b0000,0x44300000)]
+  0x42302400 JavaThread "http-0.0.0.0-8080-5" daemon [_thread_blocked, id=916, stack(0x44260000,0x442b0000)]
+  0x4254f400 JavaThread "http-0.0.0.0-8080-4" daemon [_thread_blocked, id=2068, stack(0x44210000,0x44260000)]
+  0x4219ac00 JavaThread "http-0.0.0.0-8080-3" daemon [_thread_blocked, id=1892, stack(0x441c0000,0x44210000)]
+  0x41d9a400 JavaThread "http-0.0.0.0-8080-2" daemon [_thread_blocked, id=1648, stack(0x43170000,0x431c0000)]
+  0x4167fc00 JavaThread "http-0.0.0.0-8080-1" daemon [_thread_blocked, id=3404, stack(0x41cb0000,0x41d00000)]
+  0x425dfc00 JavaThread "TP-Monitor" daemon [_thread_blocked, id=3412, stack(0x43120000,0x43170000)]
+  0x426fac00 JavaThread "TP-Processor4" daemon [_thread_in_native, id=3340, stack(0x430d0000,0x43120000)]
+  0x426fa400 JavaThread "TP-Processor3" daemon [_thread_blocked, id=3344, stack(0x43080000,0x430d0000)]
+  0x4259cc00 JavaThread "TP-Processor2" daemon [_thread_blocked, id=4020, stack(0x43030000,0x43080000)]
+  0x4259c400 JavaThread "TP-Processor1" daemon [_thread_blocked, id=2948, stack(0x42fe0000,0x43030000)]
+  0x421f7400 JavaThread "http-0.0.0.0-8080" daemon [_thread_in_native, id=640, stack(0x42f90000,0x42fe0000)]
+  0x4200ac00 JavaThread "JBossLifeThread" [_thread_blocked, id=616, stack(0x42f40000,0x42f90000)]
+  0x42752800 JavaThread "Store org.hibernate.cache.StandardQueryCache Expiry Thread" daemon [_thread_blocked, id=2940, stack(0x42ef0000,0x42f40000)]
+  0x427f5000 JavaThread "Store org.hibernate.cache.StandardQueryCache Spool Thread" daemon [_thread_blocked, id=2372, stack(0x42ea0000,0x42ef0000)]
+  0x4285c000 JavaThread "Store org.hibernate.cache.UpdateTimestampsCache Expiry Thread" daemon [_thread_blocked, id=2056, stack(0x42e50000,0x42ea0000)]
+  0x42772c00 JavaThread "Store org.hibernate.cache.UpdateTimestampsCache Spool Thread" daemon [_thread_blocked, id=3792, stack(0x42e00000,0x42e50000)]
+  0x424cc400 JavaThread "IdleRemover" daemon [_thread_blocked, id=944, stack(0x42db0000,0x42e00000)]
+  0x42041400 JavaThread "JCA PoolFiller" [_thread_blocked, id=4076, stack(0x42d30000,0x42d80000)]
+  0x421d0c00 JavaThread "Timer-1" daemon [_thread_blocked, id=1852, stack(0x42ce0000,0x42d30000)]
+  0x421b1800 JavaThread "HSQLDB Timer @21eb3f" daemon [_thread_blocked, id=2972, stack(0x42c90000,0x42ce0000)]
+  0x41d32800 JavaThread "ContainerBackgroundProcessor[StandardEngine[jboss.web]]" daemon [_thread_blocked, id=3712, stack(0x42c40000,0x42c90000)]
+  0x41d00800 JavaThread "PooledInvokerAcceptor#0-4445" [_thread_in_native, id=2740, stack(0x42bf0000,0x42c40000)]
+  0x41b70800 JavaThread "RMI TCP Accept-4444" daemon [_thread_in_native, id=2284, stack(0x42ba0000,0x42bf0000)]
+  0x41ad0400 JavaThread "TimeoutFactory-0" daemon [_thread_blocked, id=2296, stack(0x42b50000,0x42ba0000)]
+  0x42177000 JavaThread "JBoss System Threads(1)-2" daemon [_thread_in_native, id=2836, stack(0x42ae0000,0x42b30000)]
+  0x42172000 JavaThread "GC Daemon" daemon [_thread_blocked, id=3688, stack(0x42a90000,0x42ae0000)]
+  0x4216c400 JavaThread "RMI Reaper" [_thread_blocked, id=3536, stack(0x42a40000,0x42a90000)]
+  0x42147400 JavaThread "RMI TCP Accept-1098" daemon [_thread_in_native, id=3100, stack(0x429f0000,0x42a40000)]
+  0x4214e800 JavaThread "JBoss System Threads(1)-1" daemon [_thread_in_native, id=2324, stack(0x429a0000,0x429f0000)]
+  0x42155400 JavaThread "ScannerThread" daemon [_thread_blocked, id=2328, stack(0x42950000,0x429a0000)]
+  0x42110800 JavaThread "Timer-0" daemon [_thread_blocked, id=3864, stack(0x42900000,0x42950000)]
+  0x003a7400 JavaThread "DestroyJavaVM" [_thread_blocked, id=3496, stack(0x008c0000,0x00910000)]
+  0x41635400 JavaThread "Low Memory Detector" daemon [_thread_blocked, id=3616, stack(0x41a10000,0x41a60000)]
+  0x41633400 JavaThread "CompilerThread0" daemon [_thread_blocked, id=3608, stack(0x419c0000,0x41a10000)]
+  0x41625400 JavaThread "JDWP Command Reader" daemon [_thread_in_native, id=2520, stack(0x41970000,0x419c0000)]
+  0x41623c00 JavaThread "JDWP Event Helper Thread" daemon [_thread_blocked, id=3448, stack(0x41920000,0x41970000)]
+  0x41621400 JavaThread "JDWP Transport Listener: dt_socket" daemon [_thread_blocked, id=3884, stack(0x418d0000,0x41920000)]
+  0x41616400 JavaThread "Attach Listener" daemon [_thread_blocked, id=3428, stack(0x417c0000,0x41810000)]
+  0x41614c00 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=1232, stack(0x41770000,0x417c0000)]
+  0x41605000 JavaThread "Finalizer" daemon [_thread_blocked, id=3460, stack(0x41720000,0x41770000)]
+  0x41600800 JavaThread "Reference Handler" daemon [_thread_blocked, id=1180, stack(0x416d0000,0x41720000)]
+
+Other Threads:
+=>0x415fe800 VMThread [stack: 0x41680000,0x416d0000] [id=3544]
+  0x41636c00 WatcherThread [stack: 0x41a60000,0x41ab0000] [id=3612]
+
+VM state:at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x003a6250] UNKNOWN - owner thread: 0x415fe800
+[0x003a66b0] UNKNOWN - owner thread: 0x4254f400
+
+Heap
+ def new generation   total 5248K, used 3751K [0x02990000, 0x02f40000, 0x06710000)
+  eden space 4672K,  74% used [0x02990000, 0x02cf89f8, 0x02e20000)
+  from space 576K,  45% used [0x02eb0000, 0x02ef13a8, 0x02f40000)
+  to   space 576K,   0% used [0x02e20000, 0x02e20000, 0x02eb0000)
+ tenured generation   total 69004K, used 53269K [0x06710000, 0x0aa73000, 0x34990000)
+   the space 69004K,  77% used [0x06710000, 0x09b15580, 0x09b15600, 0x0aa73000)
+ compacting perm gen  total 40192K, used 40191K [0x34990000, 0x370d0000, 0x41190000)
+   the space 40192K,  99% used [0x34990000, 0x370cfff0, 0x370d0000, 0x370d0000)
+No shared spaces configured.
+
+Dynamic libraries:
+0x00400000 - 0x00424000 	C:\Arquivos de programas\Java\jdk1.6.0_10\bin\javaw.exe
+0x7c900000 - 0x7c9b6000 	C:\WINDOWS\system32\ntdll.dll
+0x7c800000 - 0x7c900000 	C:\WINDOWS\system32\kernel32.dll
+0x77f50000 - 0x77ffb000 	C:\WINDOWS\system32\ADVAPI32.dll
+0x77db0000 - 0x77e43000 	C:\WINDOWS\system32\RPCRT4.dll
+0x77f20000 - 0x77f31000 	C:\WINDOWS\system32\Secur32.dll
+0x7e360000 - 0x7e3f1000 	C:\WINDOWS\system32\USER32.dll
+0x77e50000 - 0x77e99000 	C:\WINDOWS\system32\GDI32.dll
+0x76360000 - 0x7637d000 	C:\WINDOWS\system32\IMM32.DLL
+0x7c340000 - 0x7c396000 	C:\Arquivos de programas\Java\jdk1.6.0_10\jre\bin\msvcr71.dll
+0x6d8b0000 - 0x6db06000 	C:\Arquivos de programas\Java\jdk1.6.0_10\jre\bin\client\jvm.dll
+0x76b20000 - 0x76b4e000 	C:\WINDOWS\system32\WINMM.dll
+0x6d330000 - 0x6d338000 	C:\Arquivos de programas\Java\jdk1.6.0_10\jre\bin\hpi.dll
+0x76bd0000 - 0x76bdb000 	C:\WINDOWS\system32\PSAPI.DLL
+0x6d420000 - 0x6d449000 	C:\Arquivos de programas\Java\jdk1.6.0_10\jre\bin\jdwp.dll
+0x6d750000 - 0x6d756000 	C:\Arquivos de programas\Java\jdk1.6.0_10\jre\bin\npt.dll
+0x6d860000 - 0x6d86c000 	C:\Arquivos de programas\Java\jdk1.6.0_10\jre\bin\verify.dll
+0x6d3d0000 - 0x6d3ef000 	C:\Arquivos de programas\Java\jdk1.6.0_10\jre\bin\java.dll
+0x6d8a0000 - 0x6d8af000 	C:\Arquivos de programas\Java\jdk1.6.0_10\jre\bin\zip.dll
+0x6d2a0000 - 0x6d2a7000 	C:\Arquivos de programas\Java\jdk1.6.0_10\jre\bin\dt_socket.dll
+0x71a70000 - 0x71a87000 	C:\WINDOWS\system32\WS2_32.dll
+0x77bf0000 - 0x77c48000 	C:\WINDOWS\system32\msvcrt.dll
+0x71a60000 - 0x71a68000 	C:\WINDOWS\system32\WS2HELP.dll
+0x71a10000 - 0x71a50000 	C:\WINDOWS\System32\mswsock.dll
+0x76f00000 - 0x76f27000 	C:\WINDOWS\system32\DNSAPI.dll
+0x76f90000 - 0x76f98000 	C:\WINDOWS\System32\winrnr.dll
+0x76f40000 - 0x76f6d000 	C:\WINDOWS\system32\WLDAP32.dll
+0x64000000 - 0x64025000 	C:\Arquivos de programas\Bonjour\mdnsNSP.dll
+0x76d40000 - 0x76d59000 	C:\WINDOWS\system32\Iphlpapi.dll
+0x76fa0000 - 0x76fa6000 	C:\WINDOWS\system32\rasadhlp.dll
+0x60b30000 - 0x60b88000 	C:\WINDOWS\system32\hnetcfg.dll
+0x71a50000 - 0x71a58000 	C:\WINDOWS\System32\wshtcpip.dll
+0x6d6c0000 - 0x6d6d3000 	C:\Arquivos de programas\Java\jdk1.6.0_10\jre\bin\net.dll
+0x6d610000 - 0x6d619000 	C:\Arquivos de programas\Java\jdk1.6.0_10\jre\bin\management.dll
+0x68000000 - 0x68036000 	C:\WINDOWS\system32\rsaenh.dll
+0x769a0000 - 0x76a55000 	C:\WINDOWS\system32\USERENV.dll
+0x5bcb0000 - 0x5bd05000 	C:\WINDOWS\system32\netapi32.dll
+0x6d6e0000 - 0x6d6e9000 	C:\Arquivos de programas\Java\jdk1.6.0_10\jre\bin\nio.dll
+0x6d0b0000 - 0x6d1e8000 	C:\Arquivos de programas\Java\jdk1.6.0_10\jre\bin\awt.dll
+0x72fb0000 - 0x72fd6000 	C:\WINDOWS\system32\WINSPOOL.DRV
+0x774c0000 - 0x775fe000 	C:\WINDOWS\system32\ole32.dll
+0x773b0000 - 0x774b3000 	C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.6028_x-ww_61e65202\comctl32.dll
+0x77ea0000 - 0x77f16000 	C:\WINDOWS\system32\SHLWAPI.dll
+
+VM Arguments:
+jvm_args: -Djboss.home=C:\java\jboss -Djava.library.path=C:\Arquivos de programas\Java\jdk1.6.0_10\bin -Djava.endorsed.dirs=C:\java\jboss\lib\endorsed -Xmx800m -XX:MaxPermSize=200M -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:1130 
+java_command: org.jboss.Main -c default -b 0.0.0.0
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Arquiv~1\Java\jdk1.6.0_04
+PATH=C:\Arquivos de programas\Java\jdk1.6.0_10\jre\bin;C:\oracle\product\10.2.0\client_2\bin;C:\oracle\product\10.2.0\client_1;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;
+USERNAME=Giovane
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 15 Stepping 13, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows XP Build 2600 Service Pack 3
+
+CPU:total 2 (2 cores per cpu, 1 threads per core) family 6 model 15 stepping 13, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3
+
+Memory: 4k page, physical 2088428k(987628k free), swap 4026404k(2939568k free)
+
+vm_info: Java HotSpot(TM) Client VM (11.0-b15) for windows-x86 JRE (1.6.0_10-b33), built on Sep 26 2008 01:00:43 by "java_re" with MS VC++ 7.1
+
+time: Fri Aug 19 09:03:12 2011
+elapsed time: 689 seconds
+

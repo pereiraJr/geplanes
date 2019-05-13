@@ -1,0 +1,629 @@
+2019-05-13 01:37:37,331 INFO  [org.apache.catalina.startup.Embedded] Catalina naming disabled
+2019-05-13 01:37:37,347 INFO  [org.apache.catalina.startup.ClusterRuleSetFactory] Unable to find a cluster rule set in the classpath. Will load the default rule set.
+2019-05-13 01:37:37,349 INFO  [org.apache.catalina.startup.ClusterRuleSetFactory] Unable to find a cluster rule set in the classpath. Will load the default rule set.
+2019-05-13 01:37:37,457 INFO  [org.apache.coyote.http11.Http11BaseProtocol] Initializing Coyote HTTP/1.1 on http-0.0.0.0-8080
+2019-05-13 01:37:37,457 INFO  [org.apache.catalina.startup.Catalina] Initialization processed in 108 ms
+2019-05-13 01:37:37,457 INFO  [org.jboss.web.tomcat.tc5.StandardService] Starting service jboss.web
+2019-05-13 01:37:37,459 INFO  [org.apache.catalina.core.StandardEngine] Starting Servlet Engine: Apache Tomcat/5.5.20
+2019-05-13 01:37:37,473 INFO  [org.apache.catalina.core.StandardHost] XML validation disabled
+2019-05-13 01:37:37,487 INFO  [org.apache.catalina.startup.Catalina] Server startup in 30 ms
+2019-05-13 01:37:37,574 INFO  [org.jboss.web.tomcat.tc5.TomcatDeployer] deploy, ctxPath=/, warUrl=.../deploy/jbossweb-tomcat55.sar/ROOT.war/
+2019-05-13 01:37:37,798 INFO  [org.apache.catalina.loader.WebappLoader] Dual registration of jndi stream handler: factory already defined
+2019-05-13 01:37:38,189 INFO  [org.jboss.resource.deployment.RARDeployment] Required license terms exist, view META-INF/ra.xml in .../deploy/jboss-local-jdbc.rar
+2019-05-13 01:37:38,354 INFO  [org.jboss.resource.adapter.jdbc.remote.WrapperDataSourceService] Bound ConnectionManager 'jboss.jca:service=DataSourceBinding,name=geplanes_bsc_PostgreSQLDS' to JNDI name 'java:geplanes_bsc_PostgreSQLDS'
+2019-05-13 01:37:38,376 INFO  [org.jboss.resource.adapter.jdbc.remote.WrapperDataSourceService] Bound ConnectionManager 'jboss.jca:service=DataSourceBinding,name=localhost_geplanes_bsc_PostgreSQLDS' to JNDI name 'java:localhost_geplanes_bsc_PostgreSQLDS'
+2019-05-13 01:37:38,387 INFO  [org.jboss.resource.adapter.jdbc.remote.WrapperDataSourceService] Bound ConnectionManager 'jboss.jca:service=DataSourceBinding,name=127.0.0.1_geplanes_bsc_PostgreSQLDS' to JNDI name 'java:127.0.0.1_geplanes_bsc_PostgreSQLDS'
+2019-05-13 01:37:38,606 INFO  [org.jboss.resource.adapter.jdbc.remote.WrapperDataSourceService] Bound ConnectionManager 'jboss.jca:service=DataSourceBinding,name=DefaultDS' to JNDI name 'java:DefaultDS'
+2019-05-13 01:37:38,694 INFO  [org.jboss.web.tomcat.tc5.TomcatDeployer] deploy, ctxPath=/geplanes_bsc, warUrl=.../deploy/geplanes_bsc.war/
+2019-05-13 01:37:38,816 ERROR [STDERR] log4j:ERROR A "org.jboss.logging.util.OnlyOnceErrorHandler" object is not assignable to a "org.apache.log4j.spi.ErrorHandler" variable.
+2019-05-13 01:37:38,816 ERROR [STDERR] log4j:ERROR The class "org.apache.log4j.spi.ErrorHandler" was loaded by 
+2019-05-13 01:37:38,816 ERROR [STDERR] log4j:ERROR [WebappClassLoader
+  delegate: false
+  repositories:
+    /WEB-INF/classes/
+----------> Parent Classloader:
+java.net.FactoryURLClassLoader@7da2eb9b
+] whereas object of type 
+2019-05-13 01:37:38,816 ERROR [STDERR] log4j:ERROR "org.jboss.logging.util.OnlyOnceErrorHandler" was loaded by [org.jboss.system.server.NoAnnotationURLClassLoader@49670739].
+2019-05-13 01:37:38,856 ERROR [STDERR] log4j:ERROR Could not create an Appender. Reported error follows.
+2019-05-13 01:37:38,858 ERROR [STDERR] java.lang.ClassCastException: org.jboss.logging.appender.DailyRollingFileAppender cannot be cast to org.apache.log4j.Appender
+2019-05-13 01:37:38,859 ERROR [STDERR] 	at org.apache.log4j.xml.DOMConfigurator.parseAppender(DOMConfigurator.java:238)
+2019-05-13 01:37:38,859 ERROR [STDERR] 	at org.apache.log4j.xml.DOMConfigurator.findAppenderByName(DOMConfigurator.java:171)
+2019-05-13 01:37:38,859 ERROR [STDERR] 	at org.apache.log4j.xml.DOMConfigurator.findAppenderByReference(DOMConfigurator.java:184)
+2019-05-13 01:37:38,860 ERROR [STDERR] 	at org.apache.log4j.xml.DOMConfigurator.parseChildrenOfLoggerElement(DOMConfigurator.java:502)
+2019-05-13 01:37:38,860 ERROR [STDERR] 	at org.apache.log4j.xml.DOMConfigurator.parseRoot(DOMConfigurator.java:471)
+2019-05-13 01:37:38,860 ERROR [STDERR] 	at org.apache.log4j.xml.DOMConfigurator.parse(DOMConfigurator.java:921)
+2019-05-13 01:37:38,861 ERROR [STDERR] 	at org.apache.log4j.xml.DOMConfigurator.doConfigure(DOMConfigurator.java:790)
+2019-05-13 01:37:38,861 ERROR [STDERR] 	at org.apache.log4j.xml.DOMConfigurator.doConfigure(DOMConfigurator.java:696)
+2019-05-13 01:37:38,861 ERROR [STDERR] 	at org.apache.log4j.helpers.OptionConverter.selectAndConfigure(OptionConverter.java:471)
+2019-05-13 01:37:38,862 ERROR [STDERR] 	at org.apache.log4j.LogManager.<clinit>(LogManager.java:125)
+2019-05-13 01:37:38,862 ERROR [STDERR] 	at org.apache.log4j.Logger.getLogger(Logger.java:105)
+2019-05-13 01:37:38,862 ERROR [STDERR] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2019-05-13 01:37:38,862 ERROR [STDERR] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2019-05-13 01:37:38,862 ERROR [STDERR] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2019-05-13 01:37:38,862 ERROR [STDERR] 	at java.lang.reflect.Method.invoke(Method.java:498)
+2019-05-13 01:37:38,862 ERROR [STDERR] 	at org.apache.commons.logging.impl.Log4jProxy.<init>(Log4jProxy.java:132)
+2019-05-13 01:37:38,862 ERROR [STDERR] 	at org.apache.commons.logging.impl.Log4JLogger.<init>(Log4JLogger.java:39)
+2019-05-13 01:37:38,863 ERROR [STDERR] 	at sun.reflect.GeneratedConstructorAccessor21.newInstance(Unknown Source)
+2019-05-13 01:37:38,863 ERROR [STDERR] 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+2019-05-13 01:37:38,863 ERROR [STDERR] 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+2019-05-13 01:37:38,863 ERROR [STDERR] 	at org.apache.commons.logging.impl.LogFactoryImpl.newInstance(LogFactoryImpl.java:529)
+2019-05-13 01:37:38,863 ERROR [STDERR] 	at org.apache.commons.logging.impl.LogFactoryImpl.getInstance(LogFactoryImpl.java:235)
+2019-05-13 01:37:38,864 ERROR [STDERR] 	at org.apache.commons.logging.LogFactory.getLog(LogFactory.java:372)
+2019-05-13 01:37:38,864 ERROR [STDERR] 	at org.apache.catalina.core.ContainerBase.getLogger(ContainerBase.java:380)
+2019-05-13 01:37:38,864 ERROR [STDERR] 	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4114)
+2019-05-13 01:37:38,865 ERROR [STDERR] 	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:759)
+2019-05-13 01:37:38,866 ERROR [STDERR] 	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:739)
+2019-05-13 01:37:38,866 ERROR [STDERR] 	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:524)
+2019-05-13 01:37:38,866 ERROR [STDERR] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2019-05-13 01:37:38,866 ERROR [STDERR] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2019-05-13 01:37:38,867 ERROR [STDERR] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2019-05-13 01:37:38,867 ERROR [STDERR] 	at java.lang.reflect.Method.invoke(Method.java:498)
+2019-05-13 01:37:38,867 ERROR [STDERR] 	at org.apache.commons.modeler.BaseModelMBean.invoke(BaseModelMBean.java:503)
+2019-05-13 01:37:38,867 ERROR [STDERR] 	at org.jboss.mx.server.RawDynamicInvoker.invoke(RawDynamicInvoker.java:164)
+2019-05-13 01:37:38,867 ERROR [STDERR] 	at org.jboss.mx.server.MBeanServerImpl.invoke(MBeanServerImpl.java:659)
+2019-05-13 01:37:38,867 ERROR [STDERR] 	at org.apache.catalina.core.StandardContext.init(StandardContext.java:5052)
+2019-05-13 01:37:38,868 ERROR [STDERR] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2019-05-13 01:37:38,868 ERROR [STDERR] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2019-05-13 01:37:38,868 ERROR [STDERR] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2019-05-13 01:37:38,868 ERROR [STDERR] 	at java.lang.reflect.Method.invoke(Method.java:498)
+2019-05-13 01:37:38,868 ERROR [STDERR] 	at org.apache.commons.modeler.BaseModelMBean.invoke(BaseModelMBean.java:503)
+2019-05-13 01:37:38,868 ERROR [STDERR] 	at org.jboss.mx.server.RawDynamicInvoker.invoke(RawDynamicInvoker.java:164)
+2019-05-13 01:37:38,869 ERROR [STDERR] 	at org.jboss.mx.server.MBeanServerImpl.invoke(MBeanServerImpl.java:659)
+2019-05-13 01:37:38,869 ERROR [STDERR] 	at org.jboss.web.tomcat.tc5.TomcatDeployer.performDeployInternal(TomcatDeployer.java:297)
+2019-05-13 01:37:38,869 ERROR [STDERR] 	at org.jboss.web.tomcat.tc5.TomcatDeployer.performDeploy(TomcatDeployer.java:103)
+2019-05-13 01:37:38,869 ERROR [STDERR] 	at org.jboss.web.AbstractWebDeployer.start(AbstractWebDeployer.java:371)
+2019-05-13 01:37:38,869 ERROR [STDERR] 	at org.jboss.web.WebModule.startModule(WebModule.java:83)
+2019-05-13 01:37:38,869 ERROR [STDERR] 	at org.jboss.web.WebModule.startService(WebModule.java:61)
+2019-05-13 01:37:38,869 ERROR [STDERR] 	at org.jboss.system.ServiceMBeanSupport.jbossInternalStart(ServiceMBeanSupport.java:289)
+2019-05-13 01:37:38,870 ERROR [STDERR] 	at org.jboss.system.ServiceMBeanSupport.jbossInternalLifecycle(ServiceMBeanSupport.java:245)
+2019-05-13 01:37:38,870 ERROR [STDERR] 	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+2019-05-13 01:37:38,870 ERROR [STDERR] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2019-05-13 01:37:38,870 ERROR [STDERR] 	at java.lang.reflect.Method.invoke(Method.java:498)
+2019-05-13 01:37:38,870 ERROR [STDERR] 	at org.jboss.mx.interceptor.ReflectedDispatcher.invoke(ReflectedDispatcher.java:155)
+2019-05-13 01:37:38,871 ERROR [STDERR] 	at org.jboss.mx.server.Invocation.dispatch(Invocation.java:94)
+2019-05-13 01:37:38,871 ERROR [STDERR] 	at org.jboss.mx.server.Invocation.invoke(Invocation.java:86)
+2019-05-13 01:37:38,872 ERROR [STDERR] 	at org.jboss.mx.server.AbstractMBeanInvoker.invoke(AbstractMBeanInvoker.java:264)
+2019-05-13 01:37:38,873 ERROR [STDERR] 	at org.jboss.mx.server.MBeanServerImpl.invoke(MBeanServerImpl.java:659)
+2019-05-13 01:37:38,873 ERROR [STDERR] 	at org.jboss.system.ServiceController$ServiceProxy.invoke(ServiceController.java:978)
+2019-05-13 01:37:38,877 ERROR [STDERR] 	at com.sun.proxy.$Proxy0.start(Unknown Source)
+2019-05-13 01:37:38,879 ERROR [STDERR] 	at org.jboss.system.ServiceController.start(ServiceController.java:417)
+2019-05-13 01:37:38,879 ERROR [STDERR] 	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+2019-05-13 01:37:38,880 ERROR [STDERR] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2019-05-13 01:37:38,880 ERROR [STDERR] 	at java.lang.reflect.Method.invoke(Method.java:498)
+2019-05-13 01:37:38,880 ERROR [STDERR] 	at org.jboss.mx.interceptor.ReflectedDispatcher.invoke(ReflectedDispatcher.java:155)
+2019-05-13 01:37:38,880 ERROR [STDERR] 	at org.jboss.mx.server.Invocation.dispatch(Invocation.java:94)
+2019-05-13 01:37:38,880 ERROR [STDERR] 	at org.jboss.mx.server.Invocation.invoke(Invocation.java:86)
+2019-05-13 01:37:38,880 ERROR [STDERR] 	at org.jboss.mx.server.AbstractMBeanInvoker.invoke(AbstractMBeanInvoker.java:264)
+2019-05-13 01:37:38,880 ERROR [STDERR] 	at org.jboss.mx.server.MBeanServerImpl.invoke(MBeanServerImpl.java:659)
+2019-05-13 01:37:38,880 ERROR [STDERR] 	at org.jboss.mx.util.MBeanProxyExt.invoke(MBeanProxyExt.java:210)
+2019-05-13 01:37:38,880 ERROR [STDERR] 	at com.sun.proxy.$Proxy31.start(Unknown Source)
+2019-05-13 01:37:38,880 ERROR [STDERR] 	at org.jboss.web.AbstractWebContainer.start(AbstractWebContainer.java:466)
+2019-05-13 01:37:38,880 ERROR [STDERR] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2019-05-13 01:37:38,880 ERROR [STDERR] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2019-05-13 01:37:38,880 ERROR [STDERR] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2019-05-13 01:37:38,880 ERROR [STDERR] 	at java.lang.reflect.Method.invoke(Method.java:498)
+2019-05-13 01:37:38,880 ERROR [STDERR] 	at org.jboss.mx.interceptor.ReflectedDispatcher.invoke(ReflectedDispatcher.java:155)
+2019-05-13 01:37:38,880 ERROR [STDERR] 	at org.jboss.mx.server.Invocation.dispatch(Invocation.java:94)
+2019-05-13 01:37:38,880 ERROR [STDERR] 	at org.jboss.mx.interceptor.AbstractInterceptor.invoke(AbstractInterceptor.java:133)
+2019-05-13 01:37:38,880 ERROR [STDERR] 	at org.jboss.mx.server.Invocation.invoke(Invocation.java:88)
+2019-05-13 01:37:38,880 ERROR [STDERR] 	at org.jboss.mx.interceptor.ModelMBeanOperationInterceptor.invoke(ModelMBeanOperationInterceptor.java:142)
+2019-05-13 01:37:38,880 ERROR [STDERR] 	at org.jboss.mx.interceptor.DynamicInterceptor.invoke(DynamicInterceptor.java:97)
+2019-05-13 01:37:38,880 ERROR [STDERR] 	at org.jboss.mx.server.Invocation.invoke(Invocation.java:88)
+2019-05-13 01:37:38,881 ERROR [STDERR] 	at org.jboss.mx.server.AbstractMBeanInvoker.invoke(AbstractMBeanInvoker.java:264)
+2019-05-13 01:37:38,881 ERROR [STDERR] 	at org.jboss.mx.server.MBeanServerImpl.invoke(MBeanServerImpl.java:659)
+2019-05-13 01:37:38,881 ERROR [STDERR] 	at org.jboss.mx.util.MBeanProxyExt.invoke(MBeanProxyExt.java:210)
+2019-05-13 01:37:38,881 ERROR [STDERR] 	at com.sun.proxy.$Proxy32.start(Unknown Source)
+2019-05-13 01:37:38,881 ERROR [STDERR] 	at org.jboss.deployment.MainDeployer.start(MainDeployer.java:1025)
+2019-05-13 01:37:38,881 ERROR [STDERR] 	at org.jboss.deployment.MainDeployer.deploy(MainDeployer.java:819)
+2019-05-13 01:37:38,881 ERROR [STDERR] 	at org.jboss.deployment.MainDeployer.deploy(MainDeployer.java:782)
+2019-05-13 01:37:38,881 ERROR [STDERR] 	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+2019-05-13 01:37:38,881 ERROR [STDERR] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2019-05-13 01:37:38,881 ERROR [STDERR] 	at java.lang.reflect.Method.invoke(Method.java:498)
+2019-05-13 01:37:38,881 ERROR [STDERR] 	at org.jboss.mx.interceptor.ReflectedDispatcher.invoke(ReflectedDispatcher.java:155)
+2019-05-13 01:37:38,881 ERROR [STDERR] 	at org.jboss.mx.server.Invocation.dispatch(Invocation.java:94)
+2019-05-13 01:37:38,881 ERROR [STDERR] 	at org.jboss.mx.interceptor.AbstractInterceptor.invoke(AbstractInterceptor.java:133)
+2019-05-13 01:37:38,881 ERROR [STDERR] 	at org.jboss.mx.server.Invocation.invoke(Invocation.java:88)
+2019-05-13 01:37:38,881 ERROR [STDERR] 	at org.jboss.mx.interceptor.ModelMBeanOperationInterceptor.invoke(ModelMBeanOperationInterceptor.java:142)
+2019-05-13 01:37:38,881 ERROR [STDERR] 	at org.jboss.mx.server.Invocation.invoke(Invocation.java:88)
+2019-05-13 01:37:38,881 ERROR [STDERR] 	at org.jboss.mx.server.AbstractMBeanInvoker.invoke(AbstractMBeanInvoker.java:264)
+2019-05-13 01:37:38,881 ERROR [STDERR] 	at org.jboss.mx.server.MBeanServerImpl.invoke(MBeanServerImpl.java:659)
+2019-05-13 01:37:38,881 ERROR [STDERR] 	at org.jboss.mx.util.MBeanProxyExt.invoke(MBeanProxyExt.java:210)
+2019-05-13 01:37:38,881 ERROR [STDERR] 	at com.sun.proxy.$Proxy8.deploy(Unknown Source)
+2019-05-13 01:37:38,881 ERROR [STDERR] 	at org.jboss.deployment.scanner.URLDeploymentScanner.deploy(URLDeploymentScanner.java:421)
+2019-05-13 01:37:38,881 ERROR [STDERR] 	at org.jboss.deployment.scanner.URLDeploymentScanner.scan(URLDeploymentScanner.java:634)
+2019-05-13 01:37:38,881 ERROR [STDERR] 	at org.jboss.deployment.scanner.AbstractDeploymentScanner$ScannerThread.doScan(AbstractDeploymentScanner.java:263)
+2019-05-13 01:37:38,882 ERROR [STDERR] 	at org.jboss.deployment.scanner.AbstractDeploymentScanner.startService(AbstractDeploymentScanner.java:336)
+2019-05-13 01:37:38,882 ERROR [STDERR] 	at org.jboss.system.ServiceMBeanSupport.jbossInternalStart(ServiceMBeanSupport.java:289)
+2019-05-13 01:37:38,882 ERROR [STDERR] 	at org.jboss.system.ServiceMBeanSupport.jbossInternalLifecycle(ServiceMBeanSupport.java:245)
+2019-05-13 01:37:38,882 ERROR [STDERR] 	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+2019-05-13 01:37:38,882 ERROR [STDERR] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2019-05-13 01:37:38,882 ERROR [STDERR] 	at java.lang.reflect.Method.invoke(Method.java:498)
+2019-05-13 01:37:38,882 ERROR [STDERR] 	at org.jboss.mx.interceptor.ReflectedDispatcher.invoke(ReflectedDispatcher.java:155)
+2019-05-13 01:37:38,882 ERROR [STDERR] 	at org.jboss.mx.server.Invocation.dispatch(Invocation.java:94)
+2019-05-13 01:37:38,882 ERROR [STDERR] 	at org.jboss.mx.server.Invocation.invoke(Invocation.java:86)
+2019-05-13 01:37:38,882 ERROR [STDERR] 	at org.jboss.mx.server.AbstractMBeanInvoker.invoke(AbstractMBeanInvoker.java:264)
+2019-05-13 01:37:38,882 ERROR [STDERR] 	at org.jboss.mx.server.MBeanServerImpl.invoke(MBeanServerImpl.java:659)
+2019-05-13 01:37:38,883 ERROR [STDERR] 	at org.jboss.system.ServiceController$ServiceProxy.invoke(ServiceController.java:978)
+2019-05-13 01:37:38,883 ERROR [STDERR] 	at com.sun.proxy.$Proxy0.start(Unknown Source)
+2019-05-13 01:37:38,884 ERROR [STDERR] 	at org.jboss.system.ServiceController.start(ServiceController.java:417)
+2019-05-13 01:37:38,884 ERROR [STDERR] 	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+2019-05-13 01:37:38,884 ERROR [STDERR] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2019-05-13 01:37:38,884 ERROR [STDERR] 	at java.lang.reflect.Method.invoke(Method.java:498)
+2019-05-13 01:37:38,884 ERROR [STDERR] 	at org.jboss.mx.interceptor.ReflectedDispatcher.invoke(ReflectedDispatcher.java:155)
+2019-05-13 01:37:38,884 ERROR [STDERR] 	at org.jboss.mx.server.Invocation.dispatch(Invocation.java:94)
+2019-05-13 01:37:38,884 ERROR [STDERR] 	at org.jboss.mx.server.Invocation.invoke(Invocation.java:86)
+2019-05-13 01:37:38,885 ERROR [STDERR] 	at org.jboss.mx.server.AbstractMBeanInvoker.invoke(AbstractMBeanInvoker.java:264)
+2019-05-13 01:37:38,885 ERROR [STDERR] 	at org.jboss.mx.server.MBeanServerImpl.invoke(MBeanServerImpl.java:659)
+2019-05-13 01:37:38,885 ERROR [STDERR] 	at org.jboss.mx.util.MBeanProxyExt.invoke(MBeanProxyExt.java:210)
+2019-05-13 01:37:38,885 ERROR [STDERR] 	at com.sun.proxy.$Proxy4.start(Unknown Source)
+2019-05-13 01:37:38,885 ERROR [STDERR] 	at org.jboss.deployment.SARDeployer.start(SARDeployer.java:302)
+2019-05-13 01:37:38,885 ERROR [STDERR] 	at org.jboss.deployment.MainDeployer.start(MainDeployer.java:1025)
+2019-05-13 01:37:38,885 ERROR [STDERR] 	at org.jboss.deployment.MainDeployer.deploy(MainDeployer.java:819)
+2019-05-13 01:37:38,885 ERROR [STDERR] 	at org.jboss.deployment.MainDeployer.deploy(MainDeployer.java:782)
+2019-05-13 01:37:38,885 ERROR [STDERR] 	at org.jboss.deployment.MainDeployer.deploy(MainDeployer.java:766)
+2019-05-13 01:37:38,885 ERROR [STDERR] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2019-05-13 01:37:38,885 ERROR [STDERR] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2019-05-13 01:37:38,885 ERROR [STDERR] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2019-05-13 01:37:38,885 ERROR [STDERR] 	at java.lang.reflect.Method.invoke(Method.java:498)
+2019-05-13 01:37:38,885 ERROR [STDERR] 	at org.jboss.mx.interceptor.ReflectedDispatcher.invoke(ReflectedDispatcher.java:155)
+2019-05-13 01:37:38,885 ERROR [STDERR] 	at org.jboss.mx.server.Invocation.dispatch(Invocation.java:94)
+2019-05-13 01:37:38,885 ERROR [STDERR] 	at org.jboss.mx.interceptor.AbstractInterceptor.invoke(AbstractInterceptor.java:133)
+2019-05-13 01:37:38,885 ERROR [STDERR] 	at org.jboss.mx.server.Invocation.invoke(Invocation.java:88)
+2019-05-13 01:37:38,885 ERROR [STDERR] 	at org.jboss.mx.interceptor.ModelMBeanOperationInterceptor.invoke(ModelMBeanOperationInterceptor.java:142)
+2019-05-13 01:37:38,885 ERROR [STDERR] 	at org.jboss.mx.server.Invocation.invoke(Invocation.java:88)
+2019-05-13 01:37:38,885 ERROR [STDERR] 	at org.jboss.mx.server.AbstractMBeanInvoker.invoke(AbstractMBeanInvoker.java:264)
+2019-05-13 01:37:38,885 ERROR [STDERR] 	at org.jboss.mx.server.MBeanServerImpl.invoke(MBeanServerImpl.java:659)
+2019-05-13 01:37:38,885 ERROR [STDERR] 	at org.jboss.mx.util.MBeanProxyExt.invoke(MBeanProxyExt.java:210)
+2019-05-13 01:37:38,885 ERROR [STDERR] 	at com.sun.proxy.$Proxy5.deploy(Unknown Source)
+2019-05-13 01:37:38,885 ERROR [STDERR] 	at org.jboss.system.server.ServerImpl.doStart(ServerImpl.java:482)
+2019-05-13 01:37:38,885 ERROR [STDERR] 	at org.jboss.system.server.ServerImpl.start(ServerImpl.java:362)
+2019-05-13 01:37:38,885 ERROR [STDERR] 	at org.jboss.Main.boot(Main.java:200)
+2019-05-13 01:37:38,885 ERROR [STDERR] 	at org.jboss.Main$1.run(Main.java:490)
+2019-05-13 01:37:38,885 ERROR [STDERR] 	at java.lang.Thread.run(Thread.java:748)
+2019-05-13 01:37:38,887 ERROR [STDERR] log4j:ERROR Could not parse url [file:/Users/pereirajr/Documents/Faculdade/Fernando/jboss/server/default/conf/log4j.xml].
+2019-05-13 01:37:38,888 ERROR [STDERR] java.lang.NullPointerException
+2019-05-13 01:37:38,888 ERROR [STDERR] 	at java.util.Hashtable.put(Hashtable.java:460)
+2019-05-13 01:37:38,888 ERROR [STDERR] 	at org.apache.log4j.xml.DOMConfigurator.findAppenderByName(DOMConfigurator.java:172)
+2019-05-13 01:37:38,888 ERROR [STDERR] 	at org.apache.log4j.xml.DOMConfigurator.findAppenderByReference(DOMConfigurator.java:184)
+2019-05-13 01:37:38,889 ERROR [STDERR] 	at org.apache.log4j.xml.DOMConfigurator.parseChildrenOfLoggerElement(DOMConfigurator.java:502)
+2019-05-13 01:37:38,889 ERROR [STDERR] 	at org.apache.log4j.xml.DOMConfigurator.parseRoot(DOMConfigurator.java:471)
+2019-05-13 01:37:38,889 ERROR [STDERR] 	at org.apache.log4j.xml.DOMConfigurator.parse(DOMConfigurator.java:921)
+2019-05-13 01:37:38,889 ERROR [STDERR] 	at org.apache.log4j.xml.DOMConfigurator.doConfigure(DOMConfigurator.java:790)
+2019-05-13 01:37:38,890 ERROR [STDERR] 	at org.apache.log4j.xml.DOMConfigurator.doConfigure(DOMConfigurator.java:696)
+2019-05-13 01:37:38,890 ERROR [STDERR] 	at org.apache.log4j.helpers.OptionConverter.selectAndConfigure(OptionConverter.java:471)
+2019-05-13 01:37:38,890 ERROR [STDERR] 	at org.apache.log4j.LogManager.<clinit>(LogManager.java:125)
+2019-05-13 01:37:38,890 ERROR [STDERR] 	at org.apache.log4j.Logger.getLogger(Logger.java:105)
+2019-05-13 01:37:38,890 ERROR [STDERR] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2019-05-13 01:37:38,890 ERROR [STDERR] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2019-05-13 01:37:38,890 ERROR [STDERR] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2019-05-13 01:37:38,890 ERROR [STDERR] 	at java.lang.reflect.Method.invoke(Method.java:498)
+2019-05-13 01:37:38,890 ERROR [STDERR] 	at org.apache.commons.logging.impl.Log4jProxy.<init>(Log4jProxy.java:132)
+2019-05-13 01:37:38,890 ERROR [STDERR] 	at org.apache.commons.logging.impl.Log4JLogger.<init>(Log4JLogger.java:39)
+2019-05-13 01:37:38,890 ERROR [STDERR] 	at sun.reflect.GeneratedConstructorAccessor21.newInstance(Unknown Source)
+2019-05-13 01:37:38,890 ERROR [STDERR] 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+2019-05-13 01:37:38,890 ERROR [STDERR] 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+2019-05-13 01:37:38,890 ERROR [STDERR] 	at org.apache.commons.logging.impl.LogFactoryImpl.newInstance(LogFactoryImpl.java:529)
+2019-05-13 01:37:38,890 ERROR [STDERR] 	at org.apache.commons.logging.impl.LogFactoryImpl.getInstance(LogFactoryImpl.java:235)
+2019-05-13 01:37:38,891 ERROR [STDERR] 	at org.apache.commons.logging.LogFactory.getLog(LogFactory.java:372)
+2019-05-13 01:37:38,891 ERROR [STDERR] 	at org.apache.catalina.core.ContainerBase.getLogger(ContainerBase.java:380)
+2019-05-13 01:37:38,891 ERROR [STDERR] 	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4114)
+2019-05-13 01:37:38,891 ERROR [STDERR] 	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:759)
+2019-05-13 01:37:38,891 ERROR [STDERR] 	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:739)
+2019-05-13 01:37:38,891 ERROR [STDERR] 	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:524)
+2019-05-13 01:37:38,891 ERROR [STDERR] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2019-05-13 01:37:38,891 ERROR [STDERR] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2019-05-13 01:37:38,891 ERROR [STDERR] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2019-05-13 01:37:38,891 ERROR [STDERR] 	at java.lang.reflect.Method.invoke(Method.java:498)
+2019-05-13 01:37:38,891 ERROR [STDERR] 	at org.apache.commons.modeler.BaseModelMBean.invoke(BaseModelMBean.java:503)
+2019-05-13 01:37:38,891 ERROR [STDERR] 	at org.jboss.mx.server.RawDynamicInvoker.invoke(RawDynamicInvoker.java:164)
+2019-05-13 01:37:38,891 ERROR [STDERR] 	at org.jboss.mx.server.MBeanServerImpl.invoke(MBeanServerImpl.java:659)
+2019-05-13 01:37:38,892 ERROR [STDERR] 	at org.apache.catalina.core.StandardContext.init(StandardContext.java:5052)
+2019-05-13 01:37:38,892 ERROR [STDERR] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2019-05-13 01:37:38,892 ERROR [STDERR] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2019-05-13 01:37:38,892 ERROR [STDERR] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2019-05-13 01:37:38,892 ERROR [STDERR] 	at java.lang.reflect.Method.invoke(Method.java:498)
+2019-05-13 01:37:38,892 ERROR [STDERR] 	at org.apache.commons.modeler.BaseModelMBean.invoke(BaseModelMBean.java:503)
+2019-05-13 01:37:38,892 ERROR [STDERR] 	at org.jboss.mx.server.RawDynamicInvoker.invoke(RawDynamicInvoker.java:164)
+2019-05-13 01:37:38,892 ERROR [STDERR] 	at org.jboss.mx.server.MBeanServerImpl.invoke(MBeanServerImpl.java:659)
+2019-05-13 01:37:38,892 ERROR [STDERR] 	at org.jboss.web.tomcat.tc5.TomcatDeployer.performDeployInternal(TomcatDeployer.java:297)
+2019-05-13 01:37:38,892 ERROR [STDERR] 	at org.jboss.web.tomcat.tc5.TomcatDeployer.performDeploy(TomcatDeployer.java:103)
+2019-05-13 01:37:38,892 ERROR [STDERR] 	at org.jboss.web.AbstractWebDeployer.start(AbstractWebDeployer.java:371)
+2019-05-13 01:37:38,892 ERROR [STDERR] 	at org.jboss.web.WebModule.startModule(WebModule.java:83)
+2019-05-13 01:37:38,892 ERROR [STDERR] 	at org.jboss.web.WebModule.startService(WebModule.java:61)
+2019-05-13 01:37:38,892 ERROR [STDERR] 	at org.jboss.system.ServiceMBeanSupport.jbossInternalStart(ServiceMBeanSupport.java:289)
+2019-05-13 01:37:38,892 ERROR [STDERR] 	at org.jboss.system.ServiceMBeanSupport.jbossInternalLifecycle(ServiceMBeanSupport.java:245)
+2019-05-13 01:37:38,892 ERROR [STDERR] 	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+2019-05-13 01:37:38,893 ERROR [STDERR] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2019-05-13 01:37:38,893 ERROR [STDERR] 	at java.lang.reflect.Method.invoke(Method.java:498)
+2019-05-13 01:37:38,893 ERROR [STDERR] 	at org.jboss.mx.interceptor.ReflectedDispatcher.invoke(ReflectedDispatcher.java:155)
+2019-05-13 01:37:38,893 ERROR [STDERR] 	at org.jboss.mx.server.Invocation.dispatch(Invocation.java:94)
+2019-05-13 01:37:38,893 ERROR [STDERR] 	at org.jboss.mx.server.Invocation.invoke(Invocation.java:86)
+2019-05-13 01:37:38,893 ERROR [STDERR] 	at org.jboss.mx.server.AbstractMBeanInvoker.invoke(AbstractMBeanInvoker.java:264)
+2019-05-13 01:37:38,893 ERROR [STDERR] 	at org.jboss.mx.server.MBeanServerImpl.invoke(MBeanServerImpl.java:659)
+2019-05-13 01:37:38,893 ERROR [STDERR] 	at org.jboss.system.ServiceController$ServiceProxy.invoke(ServiceController.java:978)
+2019-05-13 01:37:38,893 ERROR [STDERR] 	at com.sun.proxy.$Proxy0.start(Unknown Source)
+2019-05-13 01:37:38,893 ERROR [STDERR] 	at org.jboss.system.ServiceController.start(ServiceController.java:417)
+2019-05-13 01:37:38,893 ERROR [STDERR] 	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+2019-05-13 01:37:38,894 ERROR [STDERR] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2019-05-13 01:37:38,894 ERROR [STDERR] 	at java.lang.reflect.Method.invoke(Method.java:498)
+2019-05-13 01:37:38,894 ERROR [STDERR] 	at org.jboss.mx.interceptor.ReflectedDispatcher.invoke(ReflectedDispatcher.java:155)
+2019-05-13 01:37:38,894 ERROR [STDERR] 	at org.jboss.mx.server.Invocation.dispatch(Invocation.java:94)
+2019-05-13 01:37:38,894 ERROR [STDERR] 	at org.jboss.mx.server.Invocation.invoke(Invocation.java:86)
+2019-05-13 01:37:38,894 ERROR [STDERR] 	at org.jboss.mx.server.AbstractMBeanInvoker.invoke(AbstractMBeanInvoker.java:264)
+2019-05-13 01:37:38,894 ERROR [STDERR] 	at org.jboss.mx.server.MBeanServerImpl.invoke(MBeanServerImpl.java:659)
+2019-05-13 01:37:38,894 ERROR [STDERR] 	at org.jboss.mx.util.MBeanProxyExt.invoke(MBeanProxyExt.java:210)
+2019-05-13 01:37:38,894 ERROR [STDERR] 	at com.sun.proxy.$Proxy31.start(Unknown Source)
+2019-05-13 01:37:38,894 ERROR [STDERR] 	at org.jboss.web.AbstractWebContainer.start(AbstractWebContainer.java:466)
+2019-05-13 01:37:38,894 ERROR [STDERR] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2019-05-13 01:37:38,894 ERROR [STDERR] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2019-05-13 01:37:38,895 ERROR [STDERR] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2019-05-13 01:37:38,895 ERROR [STDERR] 	at java.lang.reflect.Method.invoke(Method.java:498)
+2019-05-13 01:37:38,895 ERROR [STDERR] 	at org.jboss.mx.interceptor.ReflectedDispatcher.invoke(ReflectedDispatcher.java:155)
+2019-05-13 01:37:38,895 ERROR [STDERR] 	at org.jboss.mx.server.Invocation.dispatch(Invocation.java:94)
+2019-05-13 01:37:38,895 ERROR [STDERR] 	at org.jboss.mx.interceptor.AbstractInterceptor.invoke(AbstractInterceptor.java:133)
+2019-05-13 01:37:38,895 ERROR [STDERR] 	at org.jboss.mx.server.Invocation.invoke(Invocation.java:88)
+2019-05-13 01:37:38,895 ERROR [STDERR] 	at org.jboss.mx.interceptor.ModelMBeanOperationInterceptor.invoke(ModelMBeanOperationInterceptor.java:142)
+2019-05-13 01:37:38,895 ERROR [STDERR] 	at org.jboss.mx.interceptor.DynamicInterceptor.invoke(DynamicInterceptor.java:97)
+2019-05-13 01:37:38,895 ERROR [STDERR] 	at org.jboss.mx.server.Invocation.invoke(Invocation.java:88)
+2019-05-13 01:37:38,895 ERROR [STDERR] 	at org.jboss.mx.server.AbstractMBeanInvoker.invoke(AbstractMBeanInvoker.java:264)
+2019-05-13 01:37:38,895 ERROR [STDERR] 	at org.jboss.mx.server.MBeanServerImpl.invoke(MBeanServerImpl.java:659)
+2019-05-13 01:37:38,895 ERROR [STDERR] 	at org.jboss.mx.util.MBeanProxyExt.invoke(MBeanProxyExt.java:210)
+2019-05-13 01:37:38,895 ERROR [STDERR] 	at com.sun.proxy.$Proxy32.start(Unknown Source)
+2019-05-13 01:37:38,895 ERROR [STDERR] 	at org.jboss.deployment.MainDeployer.start(MainDeployer.java:1025)
+2019-05-13 01:37:38,895 ERROR [STDERR] 	at org.jboss.deployment.MainDeployer.deploy(MainDeployer.java:819)
+2019-05-13 01:37:38,895 ERROR [STDERR] 	at org.jboss.deployment.MainDeployer.deploy(MainDeployer.java:782)
+2019-05-13 01:37:38,895 ERROR [STDERR] 	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+2019-05-13 01:37:38,895 ERROR [STDERR] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2019-05-13 01:37:38,895 ERROR [STDERR] 	at java.lang.reflect.Method.invoke(Method.java:498)
+2019-05-13 01:37:38,895 ERROR [STDERR] 	at org.jboss.mx.interceptor.ReflectedDispatcher.invoke(ReflectedDispatcher.java:155)
+2019-05-13 01:37:38,895 ERROR [STDERR] 	at org.jboss.mx.server.Invocation.dispatch(Invocation.java:94)
+2019-05-13 01:37:38,895 ERROR [STDERR] 	at org.jboss.mx.interceptor.AbstractInterceptor.invoke(AbstractInterceptor.java:133)
+2019-05-13 01:37:38,895 ERROR [STDERR] 	at org.jboss.mx.server.Invocation.invoke(Invocation.java:88)
+2019-05-13 01:37:38,895 ERROR [STDERR] 	at org.jboss.mx.interceptor.ModelMBeanOperationInterceptor.invoke(ModelMBeanOperationInterceptor.java:142)
+2019-05-13 01:37:38,895 ERROR [STDERR] 	at org.jboss.mx.server.Invocation.invoke(Invocation.java:88)
+2019-05-13 01:37:38,895 ERROR [STDERR] 	at org.jboss.mx.server.AbstractMBeanInvoker.invoke(AbstractMBeanInvoker.java:264)
+2019-05-13 01:37:38,895 ERROR [STDERR] 	at org.jboss.mx.server.MBeanServerImpl.invoke(MBeanServerImpl.java:659)
+2019-05-13 01:37:38,895 ERROR [STDERR] 	at org.jboss.mx.util.MBeanProxyExt.invoke(MBeanProxyExt.java:210)
+2019-05-13 01:37:38,895 ERROR [STDERR] 	at com.sun.proxy.$Proxy8.deploy(Unknown Source)
+2019-05-13 01:37:38,896 ERROR [STDERR] 	at org.jboss.deployment.scanner.URLDeploymentScanner.deploy(URLDeploymentScanner.java:421)
+2019-05-13 01:37:38,896 ERROR [STDERR] 	at org.jboss.deployment.scanner.URLDeploymentScanner.scan(URLDeploymentScanner.java:634)
+2019-05-13 01:37:38,896 ERROR [STDERR] 	at org.jboss.deployment.scanner.AbstractDeploymentScanner$ScannerThread.doScan(AbstractDeploymentScanner.java:263)
+2019-05-13 01:37:38,896 ERROR [STDERR] 	at org.jboss.deployment.scanner.AbstractDeploymentScanner.startService(AbstractDeploymentScanner.java:336)
+2019-05-13 01:37:38,896 ERROR [STDERR] 	at org.jboss.system.ServiceMBeanSupport.jbossInternalStart(ServiceMBeanSupport.java:289)
+2019-05-13 01:37:38,896 ERROR [STDERR] 	at org.jboss.system.ServiceMBeanSupport.jbossInternalLifecycle(ServiceMBeanSupport.java:245)
+2019-05-13 01:37:38,896 ERROR [STDERR] 	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+2019-05-13 01:37:38,896 ERROR [STDERR] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2019-05-13 01:37:38,896 ERROR [STDERR] 	at java.lang.reflect.Method.invoke(Method.java:498)
+2019-05-13 01:37:38,896 ERROR [STDERR] 	at org.jboss.mx.interceptor.ReflectedDispatcher.invoke(ReflectedDispatcher.java:155)
+2019-05-13 01:37:38,896 ERROR [STDERR] 	at org.jboss.mx.server.Invocation.dispatch(Invocation.java:94)
+2019-05-13 01:37:38,896 ERROR [STDERR] 	at org.jboss.mx.server.Invocation.invoke(Invocation.java:86)
+2019-05-13 01:37:38,896 ERROR [STDERR] 	at org.jboss.mx.server.AbstractMBeanInvoker.invoke(AbstractMBeanInvoker.java:264)
+2019-05-13 01:37:38,896 ERROR [STDERR] 	at org.jboss.mx.server.MBeanServerImpl.invoke(MBeanServerImpl.java:659)
+2019-05-13 01:37:38,896 ERROR [STDERR] 	at org.jboss.system.ServiceController$ServiceProxy.invoke(ServiceController.java:978)
+2019-05-13 01:37:38,896 ERROR [STDERR] 	at com.sun.proxy.$Proxy0.start(Unknown Source)
+2019-05-13 01:37:38,896 ERROR [STDERR] 	at org.jboss.system.ServiceController.start(ServiceController.java:417)
+2019-05-13 01:37:38,896 ERROR [STDERR] 	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+2019-05-13 01:37:38,896 ERROR [STDERR] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2019-05-13 01:37:38,896 ERROR [STDERR] 	at java.lang.reflect.Method.invoke(Method.java:498)
+2019-05-13 01:37:38,896 ERROR [STDERR] 	at org.jboss.mx.interceptor.ReflectedDispatcher.invoke(ReflectedDispatcher.java:155)
+2019-05-13 01:37:38,896 ERROR [STDERR] 	at org.jboss.mx.server.Invocation.dispatch(Invocation.java:94)
+2019-05-13 01:37:38,896 ERROR [STDERR] 	at org.jboss.mx.server.Invocation.invoke(Invocation.java:86)
+2019-05-13 01:37:38,896 ERROR [STDERR] 	at org.jboss.mx.server.AbstractMBeanInvoker.invoke(AbstractMBeanInvoker.java:264)
+2019-05-13 01:37:38,896 ERROR [STDERR] 	at org.jboss.mx.server.MBeanServerImpl.invoke(MBeanServerImpl.java:659)
+2019-05-13 01:37:38,896 ERROR [STDERR] 	at org.jboss.mx.util.MBeanProxyExt.invoke(MBeanProxyExt.java:210)
+2019-05-13 01:37:38,896 ERROR [STDERR] 	at com.sun.proxy.$Proxy4.start(Unknown Source)
+2019-05-13 01:37:38,896 ERROR [STDERR] 	at org.jboss.deployment.SARDeployer.start(SARDeployer.java:302)
+2019-05-13 01:37:38,896 ERROR [STDERR] 	at org.jboss.deployment.MainDeployer.start(MainDeployer.java:1025)
+2019-05-13 01:37:38,896 ERROR [STDERR] 	at org.jboss.deployment.MainDeployer.deploy(MainDeployer.java:819)
+2019-05-13 01:37:38,896 ERROR [STDERR] 	at org.jboss.deployment.MainDeployer.deploy(MainDeployer.java:782)
+2019-05-13 01:37:38,896 ERROR [STDERR] 	at org.jboss.deployment.MainDeployer.deploy(MainDeployer.java:766)
+2019-05-13 01:37:38,896 ERROR [STDERR] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2019-05-13 01:37:38,896 ERROR [STDERR] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2019-05-13 01:37:38,896 ERROR [STDERR] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2019-05-13 01:37:38,896 ERROR [STDERR] 	at java.lang.reflect.Method.invoke(Method.java:498)
+2019-05-13 01:37:38,896 ERROR [STDERR] 	at org.jboss.mx.interceptor.ReflectedDispatcher.invoke(ReflectedDispatcher.java:155)
+2019-05-13 01:37:38,896 ERROR [STDERR] 	at org.jboss.mx.server.Invocation.dispatch(Invocation.java:94)
+2019-05-13 01:37:38,897 ERROR [STDERR] 	at org.jboss.mx.interceptor.AbstractInterceptor.invoke(AbstractInterceptor.java:133)
+2019-05-13 01:37:38,897 ERROR [STDERR] 	at org.jboss.mx.server.Invocation.invoke(Invocation.java:88)
+2019-05-13 01:37:38,897 ERROR [STDERR] 	at org.jboss.mx.interceptor.ModelMBeanOperationInterceptor.invoke(ModelMBeanOperationInterceptor.java:142)
+2019-05-13 01:37:38,897 ERROR [STDERR] 	at org.jboss.mx.server.Invocation.invoke(Invocation.java:88)
+2019-05-13 01:37:38,897 ERROR [STDERR] 	at org.jboss.mx.server.AbstractMBeanInvoker.invoke(AbstractMBeanInvoker.java:264)
+2019-05-13 01:37:38,897 ERROR [STDERR] 	at org.jboss.mx.server.MBeanServerImpl.invoke(MBeanServerImpl.java:659)
+2019-05-13 01:37:38,897 ERROR [STDERR] 	at org.jboss.mx.util.MBeanProxyExt.invoke(MBeanProxyExt.java:210)
+2019-05-13 01:37:38,897 ERROR [STDERR] 	at com.sun.proxy.$Proxy5.deploy(Unknown Source)
+2019-05-13 01:37:38,897 ERROR [STDERR] 	at org.jboss.system.server.ServerImpl.doStart(ServerImpl.java:482)
+2019-05-13 01:37:38,897 ERROR [STDERR] 	at org.jboss.system.server.ServerImpl.start(ServerImpl.java:362)
+2019-05-13 01:37:38,897 ERROR [STDERR] 	at org.jboss.Main.boot(Main.java:200)
+2019-05-13 01:37:38,897 ERROR [STDERR] 	at org.jboss.Main$1.run(Main.java:490)
+2019-05-13 01:37:38,897 ERROR [STDERR] 	at java.lang.Thread.run(Thread.java:748)
+2019-05-13 01:37:39,013 INFO  [STDOUT] 01:37:39,013 INFO  [ContextLoader] Root WebApplicationContext: initialization started
+2019-05-13 01:37:39,013 INFO  [STDOUT] 01:37:39,013 INFO  [[/geplanes_bsc]] Loading Spring root WebApplicationContext
+2019-05-13 01:37:40,164 INFO  [STDOUT] 01:37:40,163 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationConfig.xml]
+2019-05-13 01:37:40,237 INFO  [STDOUT] 01:37:40,237 INFO  [AnnotationsXmlWebApplicationContext] Bean factory for application context [Root WebApplicationContext]: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [config,authenticationConfig,dataSource,sessionFactory,hibernateTemplate,sqlErrorCodesTranslator,transactionTemplate,hibernateTransactionManager,jdbcTemplate]; root of BeanFactory hierarchy
+2019-05-13 01:37:40,343 INFO  [STDOUT] 01:37:40,343 INFO  [CollectionFactory] Commons Collections 3.x available
+2019-05-13 01:37:40,357 INFO  [STDOUT] 01:37:40,357 INFO  [Version] Hibernate Annotations 3.4.0.GA
+2019-05-13 01:37:40,369 INFO  [STDOUT] 01:37:40,369 INFO  [Environment] Hibernate 3.3.2.GA
+2019-05-13 01:37:40,371 INFO  [STDOUT] 01:37:40,371 INFO  [Environment] hibernate.properties not found
+2019-05-13 01:37:40,375 INFO  [STDOUT] 01:37:40,375 INFO  [Environment] Bytecode provider name : javassist
+2019-05-13 01:37:40,377 INFO  [STDOUT] 01:37:40,377 INFO  [Environment] using JDK 1.4 java.sql.Timestamp handling
+2019-05-13 01:37:40,460 INFO  [STDOUT] 01:37:40,460 INFO  [Version] Hibernate Commons Annotations 3.1.0.GA
+2019-05-13 01:37:40,464 INFO  [STDOUT] 01:37:40,464 INFO  [AnnotationSessionFactoryBean] Building new Hibernate SessionFactory
+2019-05-13 01:37:40,514 INFO  [STDOUT] 01:37:40,514 INFO  [HibernateSearchEventListenerRegister] Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2019-05-13 01:37:40,556 INFO  [STDOUT] 01:37:40,555 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.Arquivo
+2019-05-13 01:37:40,589 INFO  [STDOUT] 01:37:40,589 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.Arquivo on table Arquivo
+2019-05-13 01:37:40,636 INFO  [STDOUT] 01:37:40,636 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.Anomalia
+2019-05-13 01:37:40,636 INFO  [STDOUT] 01:37:40,636 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.Anomalia on table Anomalia
+2019-05-13 01:37:40,693 INFO  [STDOUT] 01:37:40,693 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.Iniciativa
+2019-05-13 01:37:40,694 INFO  [STDOUT] 01:37:40,694 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.Iniciativa on table Iniciativa
+2019-05-13 01:37:40,696 INFO  [STDOUT] 01:37:40,696 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.ObjetivoMapaEstrategico
+2019-05-13 01:37:40,696 INFO  [STDOUT] 01:37:40,696 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.ObjetivoMapaEstrategico on table ObjetivoMapaEstrategico
+2019-05-13 01:37:40,699 INFO  [STDOUT] 01:37:40,699 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.PlanoGestao
+2019-05-13 01:37:40,699 INFO  [STDOUT] 01:37:40,699 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.PlanoGestao on table PlanoGestao
+2019-05-13 01:37:40,708 INFO  [STDOUT] 01:37:40,708 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.AnexoAnomalia
+2019-05-13 01:37:40,708 INFO  [STDOUT] 01:37:40,708 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.AnexoAnomalia on table AnexoAnomalia
+2019-05-13 01:37:40,710 INFO  [STDOUT] 01:37:40,710 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.UsuarioAuditoriaInterna
+2019-05-13 01:37:40,710 INFO  [STDOUT] 01:37:40,710 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.UsuarioAuditoriaInterna on table UsuarioAuditoriaInterna
+2019-05-13 01:37:40,711 INFO  [STDOUT] 01:37:40,711 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.Tela
+2019-05-13 01:37:40,711 INFO  [STDOUT] 01:37:40,711 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.Tela on table Tela
+2019-05-13 01:37:40,711 INFO  [STDOUT] 01:37:40,711 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.UnidadeGerencial
+2019-05-13 01:37:40,711 INFO  [STDOUT] 01:37:40,711 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.UnidadeGerencial on table UnidadeGerencial
+2019-05-13 01:37:40,722 INFO  [STDOUT] 01:37:40,722 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.ItemFatorAvaliacao
+2019-05-13 01:37:40,722 INFO  [STDOUT] 01:37:40,722 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.ItemFatorAvaliacao on table ItemFatorAvaliacao
+2019-05-13 01:37:40,724 INFO  [STDOUT] 01:37:40,724 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.MatrizFCSFator
+2019-05-13 01:37:40,724 INFO  [STDOUT] 01:37:40,724 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.MatrizFCSFator on table MatrizFCSFator
+2019-05-13 01:37:40,725 INFO  [STDOUT] 01:37:40,724 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.MapaNegocio
+2019-05-13 01:37:40,725 INFO  [STDOUT] 01:37:40,725 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.MapaNegocio on table MapaNegocio
+2019-05-13 01:37:40,728 INFO  [STDOUT] 01:37:40,728 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.MatrizFCSIniciativaFator
+2019-05-13 01:37:40,728 INFO  [STDOUT] 01:37:40,728 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.MatrizFCSIniciativaFator on table MatrizFCSIniciativaFator
+2019-05-13 01:37:40,730 INFO  [STDOUT] 01:37:40,730 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.Papel
+2019-05-13 01:37:40,730 INFO  [STDOUT] 01:37:40,730 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.Papel on table Papel
+2019-05-13 01:37:40,732 INFO  [STDOUT] 01:37:40,732 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.AuditoriaInterna
+2019-05-13 01:37:40,733 INFO  [STDOUT] 01:37:40,733 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.AuditoriaInterna on table AuditoriaInterna
+2019-05-13 01:37:40,739 INFO  [STDOUT] 01:37:40,739 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.CompetenciaOrganizacional
+2019-05-13 01:37:40,740 INFO  [STDOUT] 01:37:40,740 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.CompetenciaOrganizacional on table CompetenciaOrganizacional
+2019-05-13 01:37:40,742 INFO  [STDOUT] 01:37:40,742 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.PlanoAcao
+2019-05-13 01:37:40,742 INFO  [STDOUT] 01:37:40,742 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.PlanoAcao on table PlanoAcao
+2019-05-13 01:37:40,744 INFO  [STDOUT] 01:37:40,744 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.NivelHierarquico
+2019-05-13 01:37:40,744 INFO  [STDOUT] 01:37:40,744 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.NivelHierarquico on table NivelHierarquico
+2019-05-13 01:37:40,745 INFO  [STDOUT] 01:37:40,745 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.AcompanhamentoIndicador
+2019-05-13 01:37:40,745 INFO  [STDOUT] 01:37:40,745 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.AcompanhamentoIndicador on table AcompanhamentoIndicador
+2019-05-13 01:37:40,748 INFO  [STDOUT] 01:37:40,748 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.MatrizFCSIniciativa
+2019-05-13 01:37:40,748 INFO  [STDOUT] 01:37:40,748 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.MatrizFCSIniciativa on table MatrizFCSIniciativa
+2019-05-13 01:37:40,750 INFO  [STDOUT] 01:37:40,749 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.UsuarioUnidadeGerencial
+2019-05-13 01:37:40,750 INFO  [STDOUT] 01:37:40,750 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.UsuarioUnidadeGerencial on table UsuarioUnidadeGerencial
+2019-05-13 01:37:40,752 INFO  [STDOUT] 01:37:40,752 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.EmailHistoricoUsuario
+2019-05-13 01:37:40,752 INFO  [STDOUT] 01:37:40,752 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.EmailHistoricoUsuario on table EmailHistoricoUsuario
+2019-05-13 01:37:40,753 INFO  [STDOUT] 01:37:40,753 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.Ocorrencia
+2019-05-13 01:37:40,753 INFO  [STDOUT] 01:37:40,753 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.Ocorrencia on table Ocorrencia
+2019-05-13 01:37:40,756 INFO  [STDOUT] 01:37:40,756 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.CausaEfeito
+2019-05-13 01:37:40,756 INFO  [STDOUT] 01:37:40,756 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.CausaEfeito on table CausaEfeito
+2019-05-13 01:37:40,757 INFO  [STDOUT] 01:37:40,757 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.ModeloAuditoriaGestao
+2019-05-13 01:37:40,757 INFO  [STDOUT] 01:37:40,757 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.ModeloAuditoriaGestao on table ModeloAuditoriaGestao
+2019-05-13 01:37:40,759 INFO  [STDOUT] 01:37:40,759 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.PerspectivaMapaEstrategico
+2019-05-13 01:37:40,759 INFO  [STDOUT] 01:37:40,759 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.PerspectivaMapaEstrategico on table PerspectivaMapaEstrategico
+2019-05-13 01:37:40,760 INFO  [STDOUT] 01:37:40,760 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.LogProcesso
+2019-05-13 01:37:40,760 INFO  [STDOUT] 01:37:40,760 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.LogProcesso on table LogProcesso
+2019-05-13 01:37:40,761 INFO  [STDOUT] 01:37:40,761 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.Norma
+2019-05-13 01:37:40,761 INFO  [STDOUT] 01:37:40,761 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.Norma on table Norma
+2019-05-13 01:37:40,763 INFO  [STDOUT] 01:37:40,763 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.ParametrosSistema
+2019-05-13 01:37:40,763 INFO  [STDOUT] 01:37:40,763 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.ParametrosSistema on table ParametrosSistema
+2019-05-13 01:37:40,765 INFO  [STDOUT] 01:37:40,765 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.RequisitoNorma
+2019-05-13 01:37:40,765 INFO  [STDOUT] 01:37:40,765 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.RequisitoNorma on table RequisitoNorma
+2019-05-13 01:37:40,766 INFO  [STDOUT] 01:37:40,766 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.Perspectiva
+2019-05-13 01:37:40,766 INFO  [STDOUT] 01:37:40,766 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.Perspectiva on table Perspectiva
+2019-05-13 01:37:40,767 INFO  [STDOUT] 01:37:40,767 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.Indicador
+2019-05-13 01:37:40,767 INFO  [STDOUT] 01:37:40,767 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.Indicador on table Indicador
+2019-05-13 01:37:40,784 INFO  [STDOUT] 01:37:40,784 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.MapaEstrategico
+2019-05-13 01:37:40,785 INFO  [STDOUT] 01:37:40,784 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.MapaEstrategico on table MapaEstrategico
+2019-05-13 01:37:40,786 INFO  [STDOUT] 01:37:40,786 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.EmailHistorico
+2019-05-13 01:37:40,787 INFO  [STDOUT] 01:37:40,787 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.EmailHistorico on table EmailHistorico
+2019-05-13 01:37:40,788 INFO  [STDOUT] 01:37:40,788 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.UnidadeMedida
+2019-05-13 01:37:40,789 INFO  [STDOUT] 01:37:40,789 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.UnidadeMedida on table UnidadeMedida
+2019-05-13 01:37:40,789 INFO  [STDOUT] 01:37:40,789 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.Atividade
+2019-05-13 01:37:40,790 INFO  [STDOUT] 01:37:40,790 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.Atividade on table Atividade
+2019-05-13 01:37:40,790 INFO  [STDOUT] 01:37:40,790 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.Competencia
+2019-05-13 01:37:40,790 INFO  [STDOUT] 01:37:40,790 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.Competencia on table Competencia
+2019-05-13 01:37:40,791 INFO  [STDOUT] 01:37:40,791 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.ObjetivoEstrategico
+2019-05-13 01:37:40,791 INFO  [STDOUT] 01:37:40,791 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.ObjetivoEstrategico on table ObjetivoEstrategico
+2019-05-13 01:37:40,792 INFO  [STDOUT] 01:37:40,792 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.Mensagem
+2019-05-13 01:37:40,792 INFO  [STDOUT] 01:37:40,792 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.Mensagem on table Mensagem
+2019-05-13 01:37:40,793 INFO  [STDOUT] 01:37:40,793 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.ComentarioItem
+2019-05-13 01:37:40,793 INFO  [STDOUT] 01:37:40,793 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.ComentarioItem on table ComentarioItem
+2019-05-13 01:37:40,794 INFO  [STDOUT] 01:37:40,794 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.SolicitacaoRepactuacaoIndicador
+2019-05-13 01:37:40,794 INFO  [STDOUT] 01:37:40,794 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.SolicitacaoRepactuacaoIndicador on table SolicitacaoRepactuacaoIndicador
+2019-05-13 01:37:40,795 INFO  [STDOUT] 01:37:40,795 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.UsuarioPapel
+2019-05-13 01:37:40,796 INFO  [STDOUT] 01:37:40,796 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.UsuarioPapel on table UsuarioPapel
+2019-05-13 01:37:40,796 INFO  [STDOUT] 01:37:40,796 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.MapaCompetencia
+2019-05-13 01:37:40,797 INFO  [STDOUT] 01:37:40,797 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.MapaCompetencia on table MapaCompetencia
+2019-05-13 01:37:40,798 INFO  [STDOUT] 01:37:40,798 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.SolicitacaoCancelamentoIndicador
+2019-05-13 01:37:40,798 INFO  [STDOUT] 01:37:40,798 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.SolicitacaoCancelamentoIndicador on table SolicitacaoCancelamentoIndicador
+2019-05-13 01:37:40,800 INFO  [STDOUT] 01:37:40,800 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.Permissao
+2019-05-13 01:37:40,801 INFO  [STDOUT] 01:37:40,801 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.Permissao on table Permissao
+2019-05-13 01:37:40,818 INFO  [STDOUT] 01:37:40,818 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.Usuario
+2019-05-13 01:37:40,818 INFO  [STDOUT] 01:37:40,818 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.Usuario on table Usuario
+2019-05-13 01:37:40,846 INFO  [STDOUT] 01:37:40,846 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.AcaoPreventiva
+2019-05-13 01:37:40,846 INFO  [STDOUT] 01:37:40,846 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.AcaoPreventiva on table AcaoPreventiva
+2019-05-13 01:37:40,848 INFO  [STDOUT] 01:37:40,848 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.PainelIndicadorFiltro
+2019-05-13 01:37:40,848 INFO  [STDOUT] 01:37:40,848 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.PainelIndicadorFiltro on table PainelIndicadorFiltro
+2019-05-13 01:37:40,848 INFO  [STDOUT] 01:37:40,848 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.FatorAvaliacao
+2019-05-13 01:37:40,849 INFO  [STDOUT] 01:37:40,849 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.FatorAvaliacao on table FatorAvaliacao
+2019-05-13 01:37:40,864 INFO  [STDOUT] 01:37:40,864 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.ItemAuditoriaInterna
+2019-05-13 01:37:40,868 INFO  [STDOUT] 01:37:40,868 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.ItemAuditoriaInterna on table ItemAuditoriaInterna
+2019-05-13 01:37:40,869 INFO  [STDOUT] 01:37:40,869 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.AuditoriaGestao
+2019-05-13 01:37:40,869 INFO  [STDOUT] 01:37:40,869 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.AuditoriaGestao on table AuditoriaGestao
+2019-05-13 01:37:40,887 INFO  [STDOUT] 01:37:40,887 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.ItemModeloAuditoriaGestao
+2019-05-13 01:37:40,887 INFO  [STDOUT] 01:37:40,887 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.ItemModeloAuditoriaGestao on table ItemModeloAuditoriaGestao
+2019-05-13 01:37:40,897 INFO  [STDOUT] 01:37:40,897 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.MatrizFCS
+2019-05-13 01:37:40,902 INFO  [STDOUT] 01:37:40,902 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.MatrizFCS on table MatrizFCS
+2019-05-13 01:37:40,903 INFO  [STDOUT] 01:37:40,903 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.AnexoIndicador
+2019-05-13 01:37:40,904 INFO  [STDOUT] 01:37:40,904 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.AnexoIndicador on table AnexoIndicador
+2019-05-13 01:37:40,905 INFO  [STDOUT] 01:37:40,905 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.AuditoriaGestaoIndicadorItem
+2019-05-13 01:37:40,905 INFO  [STDOUT] 01:37:40,905 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.AuditoriaGestaoIndicadorItem on table AuditoriaGestaoIndicadorItem
+2019-05-13 01:37:40,986 INFO  [STDOUT] 01:37:40,986 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.Comentario
+2019-05-13 01:37:40,987 INFO  [STDOUT] 01:37:40,987 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.Comentario on table Comentario
+2019-05-13 01:37:40,988 INFO  [STDOUT] 01:37:40,988 INFO  [AnnotationBinder] Binding entity from annotated class: br.com.linkcom.sgm.beans.AuditoriaGestaoIndicador
+2019-05-13 01:37:40,989 INFO  [STDOUT] 01:37:40,989 INFO  [EntityBinder] Bind entity br.com.linkcom.sgm.beans.AuditoriaGestaoIndicador on table AuditoriaGestaoIndicador
+2019-05-13 01:37:41,096 INFO  [STDOUT] 01:37:41,096 INFO  [CollectionBinder] Mapping collection: br.com.linkcom.sgm.beans.Anomalia.anexosAnomalia -> AnexoAnomalia
+2019-05-13 01:37:41,098 INFO  [STDOUT] 01:37:41,098 INFO  [CollectionBinder] Mapping collection: br.com.linkcom.sgm.beans.Anomalia.causasEfeito -> CausaEfeito
+2019-05-13 01:37:41,098 INFO  [STDOUT] 01:37:41,098 INFO  [CollectionBinder] Mapping collection: br.com.linkcom.sgm.beans.Anomalia.planosAcao -> PlanoAcao
+2019-05-13 01:37:41,098 INFO  [STDOUT] 01:37:41,098 INFO  [CollectionBinder] Mapping collection: br.com.linkcom.sgm.beans.Iniciativa.listaPlanoAcao -> PlanoAcao
+2019-05-13 01:37:41,098 INFO  [STDOUT] 01:37:41,098 INFO  [CollectionBinder] Mapping collection: br.com.linkcom.sgm.beans.ObjetivoMapaEstrategico.listaIndicador -> Indicador
+2019-05-13 01:37:41,099 INFO  [STDOUT] 01:37:41,099 INFO  [CollectionBinder] Mapping collection: br.com.linkcom.sgm.beans.ObjetivoMapaEstrategico.listaIniciativa -> Iniciativa
+2019-05-13 01:37:41,099 INFO  [STDOUT] 01:37:41,099 INFO  [CollectionBinder] Mapping collection: br.com.linkcom.sgm.beans.ObjetivoMapaEstrategico.listaMatrizFCS -> MatrizFCS
+2019-05-13 01:37:41,099 INFO  [STDOUT] 01:37:41,099 INFO  [CollectionBinder] Mapping collection: br.com.linkcom.sgm.beans.PlanoGestao.unidadesGerenciais -> UnidadeGerencial
+2019-05-13 01:37:41,100 INFO  [STDOUT] 01:37:41,099 INFO  [CollectionBinder] Mapping collection: br.com.linkcom.sgm.beans.UnidadeGerencial.listaIndicador -> Indicador
+2019-05-13 01:37:41,105 INFO  [STDOUT] 01:37:41,105 INFO  [CollectionBinder] Mapping collection: br.com.linkcom.sgm.beans.UnidadeGerencial.usuariosUnidadeGerencial -> UsuarioUnidadeGerencial
+2019-05-13 01:37:41,105 INFO  [STDOUT] 01:37:41,105 INFO  [CollectionBinder] Mapping collection: br.com.linkcom.sgm.beans.Papel.listaPermissao -> Permissao
+2019-05-13 01:37:41,105 INFO  [STDOUT] 01:37:41,105 INFO  [CollectionBinder] Mapping collection: br.com.linkcom.sgm.beans.Papel.listaPessoapapel -> UsuarioPapel
+2019-05-13 01:37:41,105 INFO  [STDOUT] 01:37:41,105 INFO  [CollectionBinder] Mapping collection: br.com.linkcom.sgm.beans.AuditoriaInterna.listaItemAuditoriaInterna -> ItemAuditoriaInterna
+2019-05-13 01:37:41,106 INFO  [STDOUT] 01:37:41,106 INFO  [CollectionBinder] Mapping collection: br.com.linkcom.sgm.beans.AuditoriaInterna.listaUsuarioAuditoriaInterna -> UsuarioAuditoriaInterna
+2019-05-13 01:37:41,106 INFO  [STDOUT] 01:37:41,106 INFO  [CollectionBinder] Mapping collection: br.com.linkcom.sgm.beans.MatrizFCSIniciativa.listaMatrizFcsIniciativaFator -> MatrizFCSIniciativaFator
+2019-05-13 01:37:41,106 INFO  [STDOUT] 01:37:41,106 INFO  [CollectionBinder] Mapping collection: br.com.linkcom.sgm.beans.ModeloAuditoriaGestao.listaItemModeloAuditoriaGestao -> ItemModeloAuditoriaGestao
+2019-05-13 01:37:41,106 INFO  [STDOUT] 01:37:41,106 INFO  [CollectionBinder] Mapping collection: br.com.linkcom.sgm.beans.PerspectivaMapaEstrategico.listaObjetivoMapaEstrategico -> ObjetivoMapaEstrategico
+2019-05-13 01:37:41,107 INFO  [STDOUT] 01:37:41,107 INFO  [CollectionBinder] Mapping collection: br.com.linkcom.sgm.beans.Norma.listaRequisitoNorma -> RequisitoNorma
+2019-05-13 01:37:41,107 INFO  [STDOUT] 01:37:41,107 INFO  [CollectionBinder] Mapping collection: br.com.linkcom.sgm.beans.Indicador.acompanhamentosIndicador -> AcompanhamentoIndicador
+2019-05-13 01:37:41,108 INFO  [STDOUT] 01:37:41,108 INFO  [CollectionBinder] Mapping collection: br.com.linkcom.sgm.beans.Indicador.anexosIndicador -> AnexoIndicador
+2019-05-13 01:37:41,108 INFO  [STDOUT] 01:37:41,108 INFO  [CollectionBinder] Mapping collection: br.com.linkcom.sgm.beans.MapaEstrategico.listaPerspectivaMapaEstrategico -> PerspectivaMapaEstrategico
+2019-05-13 01:37:41,109 INFO  [STDOUT] 01:37:41,109 INFO  [CollectionBinder] Mapping collection: br.com.linkcom.sgm.beans.EmailHistorico.listaEmailHistoricoUsuario -> EmailHistoricoUsuario
+2019-05-13 01:37:41,109 INFO  [STDOUT] 01:37:41,109 INFO  [CollectionBinder] Mapping collection: br.com.linkcom.sgm.beans.MapaCompetencia.atividades -> Atividade
+2019-05-13 01:37:41,109 INFO  [STDOUT] 01:37:41,109 INFO  [CollectionBinder] Mapping collection: br.com.linkcom.sgm.beans.MapaCompetencia.competencias -> Competencia
+2019-05-13 01:37:41,109 INFO  [STDOUT] 01:37:41,109 INFO  [CollectionBinder] Mapping collection: br.com.linkcom.sgm.beans.Usuario.usuariosPapel -> UsuarioPapel
+2019-05-13 01:37:41,110 INFO  [STDOUT] 01:37:41,110 INFO  [CollectionBinder] Mapping collection: br.com.linkcom.sgm.beans.Usuario.usuariosUnidadeGerencial -> UsuarioUnidadeGerencial
+2019-05-13 01:37:41,110 INFO  [STDOUT] 01:37:41,110 INFO  [CollectionBinder] Mapping collection: br.com.linkcom.sgm.beans.AcaoPreventiva.planosAcao -> PlanoAcao
+2019-05-13 01:37:41,111 INFO  [STDOUT] 01:37:41,110 INFO  [CollectionBinder] Mapping collection: br.com.linkcom.sgm.beans.FatorAvaliacao.listaItemFatorAvaliacao -> ItemFatorAvaliacao
+2019-05-13 01:37:41,111 INFO  [STDOUT] 01:37:41,111 INFO  [CollectionBinder] Mapping collection: br.com.linkcom.sgm.beans.AuditoriaGestao.listaAuditoriaGestaoIndicador -> AuditoriaGestaoIndicador
+2019-05-13 01:37:41,111 INFO  [STDOUT] 01:37:41,111 INFO  [CollectionBinder] Mapping collection: br.com.linkcom.sgm.beans.MatrizFCS.listaMatrizFcsFator -> MatrizFCSFator
+2019-05-13 01:37:41,111 INFO  [STDOUT] 01:37:41,111 INFO  [CollectionBinder] Mapping collection: br.com.linkcom.sgm.beans.MatrizFCS.listaMatrizFcsIniciativa -> MatrizFCSIniciativa
+2019-05-13 01:37:41,111 INFO  [STDOUT] 01:37:41,111 INFO  [CollectionBinder] Mapping collection: br.com.linkcom.sgm.beans.Comentario.listaComentarioItem -> ComentarioItem
+2019-05-13 01:37:41,112 INFO  [STDOUT] 01:37:41,112 INFO  [CollectionBinder] Mapping collection: br.com.linkcom.sgm.beans.AuditoriaGestaoIndicador.listaAuditoriaGestaoIndicadorItem -> AuditoriaGestaoIndicadorItem
+2019-05-13 01:37:41,120 INFO  [STDOUT] 01:37:41,120 INFO  [Version] Hibernate Validator 3.1.0.GA
+2019-05-13 01:37:41,219 INFO  [STDOUT] 01:37:41,219 INFO  [ConnectionProviderFactory] Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2019-05-13 01:37:41,222 INFO  [STDOUT] Conectando ao banco padrão para configuração do hibernate. (jndi: 'geplanes_PostgreSQLDS')
+2019-05-13 01:37:41,330 INFO  [STDOUT] 01:37:41,330 INFO  [SettingsFactory] RDBMS: PostgreSQL, version: 8.4.22
+2019-05-13 01:37:41,330 INFO  [STDOUT] 01:37:41,330 INFO  [SettingsFactory] JDBC driver: PostgreSQL Native Driver, version: PostgreSQL 8.4 JDBC4 (build 703)
+2019-05-13 01:37:41,360 INFO  [STDOUT] 01:37:41,359 INFO  [Dialect] Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2019-05-13 01:37:41,364 INFO  [STDOUT] 01:37:41,364 INFO  [TransactionFactoryFactory] Using default transaction strategy (direct JDBC transactions)
+2019-05-13 01:37:41,366 INFO  [STDOUT] 01:37:41,366 INFO  [TransactionManagerLookupFactory] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2019-05-13 01:37:41,366 INFO  [STDOUT] 01:37:41,366 INFO  [SettingsFactory] Automatic flush during beforeCompletion(): disabled
+2019-05-13 01:37:41,366 INFO  [STDOUT] 01:37:41,366 INFO  [SettingsFactory] Automatic session close at end of transaction: disabled
+2019-05-13 01:37:41,366 INFO  [STDOUT] 01:37:41,366 INFO  [SettingsFactory] JDBC batch size: 15
+2019-05-13 01:37:41,366 INFO  [STDOUT] 01:37:41,366 INFO  [SettingsFactory] JDBC batch updates for versioned data: disabled
+2019-05-13 01:37:41,372 INFO  [STDOUT] 01:37:41,372 INFO  [SettingsFactory] Scrollable result sets: enabled
+2019-05-13 01:37:41,378 INFO  [STDOUT] 01:37:41,378 INFO  [SettingsFactory] JDBC3 getGeneratedKeys(): enabled
+2019-05-13 01:37:41,378 INFO  [STDOUT] 01:37:41,378 INFO  [SettingsFactory] Connection release mode: on_close
+2019-05-13 01:37:41,378 INFO  [STDOUT] 01:37:41,378 INFO  [SettingsFactory] Default batch fetch size: 1
+2019-05-13 01:37:41,378 INFO  [STDOUT] 01:37:41,378 INFO  [SettingsFactory] Generate SQL with comments: disabled
+2019-05-13 01:37:41,378 INFO  [STDOUT] 01:37:41,378 INFO  [SettingsFactory] Order SQL updates by primary key: disabled
+2019-05-13 01:37:41,379 INFO  [STDOUT] 01:37:41,379 INFO  [SettingsFactory] Order SQL inserts for batching: disabled
+2019-05-13 01:37:41,379 INFO  [STDOUT] 01:37:41,379 INFO  [SettingsFactory] Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2019-05-13 01:37:41,382 INFO  [STDOUT] 01:37:41,382 INFO  [ASTQueryTranslatorFactory] Using ASTQueryTranslatorFactory
+2019-05-13 01:37:41,382 INFO  [STDOUT] 01:37:41,382 INFO  [SettingsFactory] Query language substitutions: {}
+2019-05-13 01:37:41,383 INFO  [STDOUT] 01:37:41,383 INFO  [SettingsFactory] JPA-QL strict compliance: disabled
+2019-05-13 01:37:41,383 INFO  [STDOUT] 01:37:41,383 INFO  [SettingsFactory] Second-level cache: enabled
+2019-05-13 01:37:41,383 INFO  [STDOUT] 01:37:41,383 INFO  [SettingsFactory] Query cache: enabled
+2019-05-13 01:37:41,388 INFO  [STDOUT] 01:37:41,388 INFO  [SettingsFactory] Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge
+2019-05-13 01:37:41,388 INFO  [STDOUT] 01:37:41,388 INFO  [RegionFactoryCacheProviderBridge] Cache provider: org.hibernate.cache.EhCacheProvider
+2019-05-13 01:37:41,392 INFO  [STDOUT] 01:37:41,392 INFO  [SettingsFactory] Optimize cache for minimal puts: disabled
+2019-05-13 01:37:41,392 INFO  [STDOUT] 01:37:41,392 INFO  [SettingsFactory] Structured second-level cache entries: disabled
+2019-05-13 01:37:41,392 INFO  [STDOUT] 01:37:41,392 INFO  [SettingsFactory] Query cache factory: org.hibernate.cache.StandardQueryCacheFactory
+2019-05-13 01:37:41,396 INFO  [STDOUT] 01:37:41,396 INFO  [SettingsFactory] Echoing all SQL to stdout
+2019-05-13 01:37:41,397 INFO  [STDOUT] 01:37:41,397 INFO  [SettingsFactory] Statistics: disabled
+2019-05-13 01:37:41,397 INFO  [STDOUT] 01:37:41,397 INFO  [SettingsFactory] Deleted entity synthetic identifier rollback: disabled
+2019-05-13 01:37:41,398 INFO  [STDOUT] 01:37:41,398 INFO  [SettingsFactory] Default entity-mode: pojo
+2019-05-13 01:37:41,398 INFO  [STDOUT] 01:37:41,398 INFO  [SettingsFactory] Named query checking : enabled
+2019-05-13 01:37:41,471 INFO  [STDOUT] 01:37:41,471 INFO  [SessionFactoryImpl] building session factory
+2019-05-13 01:37:41,483 INFO  [STDOUT] 01:37:41,482 WARN  [ConfigurationFactory] No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/Users/pereirajr/Documents/Faculdade/Fernando/jboss/server/default/./deploy/geplanes_bsc.war/WEB-INF/lib/ehcache-1.2.3.jar!/ehcache-failsafe.xml
+2019-05-13 01:37:42,394 INFO  [STDOUT] 01:37:42,394 INFO  [SessionFactoryObjectFactory] Not binding factory to JNDI, no JNDI name configured
+2019-05-13 01:37:42,395 INFO  [STDOUT] 01:37:42,395 INFO  [UpdateTimestampsCache] starting update timestamps cache at region: org.hibernate.cache.UpdateTimestampsCache
+2019-05-13 01:37:42,396 INFO  [STDOUT] 01:37:42,396 WARN  [EhCacheProvider] Could not find configuration [org.hibernate.cache.UpdateTimestampsCache]; using defaults.
+2019-05-13 01:37:42,426 INFO  [STDOUT] 01:37:42,426 INFO  [StandardQueryCache] starting query cache at region: org.hibernate.cache.StandardQueryCache
+2019-05-13 01:37:42,438 INFO  [STDOUT] 01:37:42,438 WARN  [EhCacheProvider] Could not find configuration [org.hibernate.cache.StandardQueryCache]; using defaults.
+2019-05-13 01:37:42,485 INFO  [STDOUT] 01:37:42,485 INFO  [NeoBeanFactoryPostProcessor] Encontrado Config. Utilizando bean config
+2019-05-13 01:37:42,514 INFO  [STDOUT] 01:37:42,514 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2019-05-13 01:37:42,539 INFO  [STDOUT] 01:37:42,539 INFO  [SQLErrorCodesFactory] SQLErrorCodes loaded: [DB2, HSQL, MS-SQL, MySQL, Oracle, Informix, PostgreSQL, Sybase]
+2019-05-13 01:37:42,547 INFO  [STDOUT] Conectando ao banco padrão para configuração do hibernate. (jndi: 'geplanes_PostgreSQLDS')
+2019-05-13 01:37:42,589 INFO  [STDOUT] 01:37:42,589 INFO  [NeoBeanFactoryPostProcessor] AuthorizationDAO não configurado no XML mas encontrado na aplicação. Utilizando classe: br.com.linkcom.sgm.dao.GeplanesAuthorizationDAO
+2019-05-13 01:37:42,597 INFO  [STDOUT] 01:37:42,597 INFO  [AnnotationsXmlWebApplicationContext] 13 beans defined in application context [Root WebApplicationContext]
+2019-05-13 01:37:42,608 INFO  [STDOUT] 01:37:42,608 INFO  [AnnotationsXmlWebApplicationContext] Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@772ef15c]
+2019-05-13 01:37:42,609 INFO  [STDOUT] 01:37:42,609 INFO  [AnnotationsXmlWebApplicationContext] Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@cf55a4]
+2019-05-13 01:37:42,616 INFO  [STDOUT] 01:37:42,616 INFO  [UiApplicationContextUtils] Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@3c12f0f0]
+2019-05-13 01:37:42,617 INFO  [STDOUT] 01:37:42,617 INFO  [DefaultListableBeanFactory] Pre-instantiating singletons in factory [org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [config,authenticationConfig,dataSource,sessionFactory,hibernateTemplate,sqlErrorCodesTranslator,transactionTemplate,hibernateTransactionManager,jdbcTemplate,neoImageResolver,neoFormater,authorizationDAO,multipartResolver]; root of BeanFactory hierarchy]
+2019-05-13 01:37:42,646 INFO  [STDOUT] 01:37:42,646 INFO  [ContextLoader] Criando contexto de aplicação Neo
+2019-05-13 01:37:42,698 INFO  [STDOUT] 01:37:42,698 INFO  [AnnotationsXmlWebApplicationContext] Bean factory for application context [Root WebApplicationContext]: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [unidadeGerencialTreeController,ajaxCompetenciaOrganizacionalController,indexController,anomaliaReport,auditoriaGestaoReport,iniciativaPlanoAcaoReport,alcanceMetaInstitucionalReport,apresentacaoResultadosReport,mapaEstrategicoReport,anomaliaSinteticoPorStatusReport,pendenciaAnomaliaReport,anomaliaListagemReport,acaoPreventivaReport,mapaNegocioReport,auditoriaInternaReport,anomaliaDiagramaReport,diarioBordoReport,indicadoresEstrategicoReport,pendenciaCadastroReport,matrizFCSReport,mapaCompetenciaReport,desempenhoReport,unidadeGerencialAutoCompleteController,distribuicaoPesosIndicadoresProcess,sobreGeplanesProcess,envioEmailProcess,definicaoNegocioProcess,lancamentoValorRealProcess,sobreLinkComProcess,apresentacaoResultadosProcess,definicaoEstrategiaProcess,iniciativaPlanoAcaoProcess,solicitacaoRepactuacaoIndicadorProcess,logProcessoProcess,matrizFCSProcess,painelControle,definicaoCompetenciaProcess,solicitacaoCancelamentoIndicadorProcess,mapaNegocio,alterarSenhaProcess,distribuicaoPesosIndicadoresService,lancamentoValorRealService,controleCadastroService,parametrosSistemaCrud,graficosDashboardProcess,emailHistoricoCrud,unidadeMedidaCrud,papelCrud,nivelHierarquicoCrud,auditoriaInternaCrud,indicadorCrud,mensagemCrud,planoGestaoCrud,fatorAvaliacaoCrud,perspectivaCrud,acaoPreventivaCrud,objetivoEstrategicoCrud,modeloAuditoriaGestaoCrud,usuarioCrud,unidadeGerencialCrud,auditoriaGestaoCrud,anomaliaCrud,ocorrenciaCrud,normaCrud,competenciaOrganizacionalCrud,genericService,mapaNegocioService,unidadeMedidaService,modeloAuditoriaGestaoService,anexoIndicadorService,arquivoService,perspectivaService,requisitoNormaService,mapaCompetenciaService,auditoriaGestaoService,comentarioItemService,fatorAvaliacaoService,matrizFCSIniciativaFatorService,competenciaService,planoAcaoService,objetivoEstrategicoService,acompanhamentoIndicadorService,perspectivaMapaEstrategicoService,mapaEstrategicoService,unidadeGerencialService,anomaliaService,acaoPreventivaService,usuarioUnidadeGerencialService,normaService,iniciativaService,parametrosSistemaService,planoGestaoService,auditoriaGestaoIndicadorService,objetivoMapaEstrategicoService,comentarioService,auditoriaInternaService,usuarioPapelService,causaEfeitoService,mensagemService,itemModeloAuditoriaGestaoService,itemFatorAvaliacaoService,competenciaOrganizacionalService,atividadeService,emailHistoricoUsuarioService,indicadorService,solicitacaoRepactuacaoIndicadorService,ocorrenciaService,telaService,emailHistoricoService,matrizFCSService,nivelHierarquicoService,anexoAnomaliaService,logProcessoService,usuarioService,painelIndicadorFiltroService,permissaoService,papelService,auditoriaGestaoIndicadorItemService,matrizFCSFatorService,matrizFCSIniciativaService,solicitacaoCancelamentoIndicadorService,genericDAO,perspectivaMapaEstrategicoDAO,logProcessoDAO,competenciaDAO,comentarioDAO,nivelHierarquicoDAO,matrizFCSIniciativaDAO,acompanhamentoIndicadorDAO,permissaoDAO,auditoriaGestaoDAO,emailHistoricoUsuarioDAO,mensagemDAO,matrizFCSIniciativaFatorDAO,comentarioItemDAO,auditoriaGestaoIndicadorItemDAO,mapaNegocioDAO,telaDAO,solicitacaoCancelamentoIndicadorDAO,perspectivaDAO,ocorrenciaDAO,itemModeloAuditoriaGestaoDAO,normaDAO,objetivoMapaEstrategicoDAO,papelDAO,planoGestaoDAO,mapaEstrategicoDAO,usuarioPapelDAO,matrizFCSFatorDAO,painelIndicadorFiltroDAO,anomaliaDAO,anexoIndicadorDAO,unidadeMedidaDAO,anexoAnomaliaDAO,competenciaOrganizacionalDAO,unidadeGerencialDAO,usuarioUnidadeGerencialDAO,indicadorDAO,mapaCompetenciaDAO,matrizFCSDAO,atividadeDAO,arquivoDAO,modeloAuditoriaGestaoDAO,parametrosSistemaDAO,solicitacaoRepactuacaoIndicadorDAO,fatorAvaliacaoDAO,auditoriaInternaDAO,iniciativaDAO,emailHistoricoDAO,requisitoNormaDAO,usuarioDAO,planoAcaoDAO,itemFatorAvaliacaoDAO,acaoPreventivaDAO,auditoriaGestaoIndicadorDAO,causaEfeitoDAO,objetivoEstrategicoDAO]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [config,authenticationConfig,dataSource,sessionFactory,hibernateTemplate,sqlErrorCodesTranslator,transactionTemplate,hibernateTransactionManager,jdbcTemplate,neoImageResolver,neoFormater,authorizationDAO,multipartResolver]; root of BeanFactory hierarchy
+2019-05-13 01:37:42,698 INFO  [STDOUT] 01:37:42,698 INFO  [AnnotationsXmlWebApplicationContext] 177 beans defined in application context [Root WebApplicationContext]
+2019-05-13 01:37:42,699 INFO  [STDOUT] 01:37:42,699 INFO  [AnnotationsXmlWebApplicationContext] Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@67c5dd92]
+2019-05-13 01:37:42,699 INFO  [STDOUT] 01:37:42,699 INFO  [AnnotationsXmlWebApplicationContext] Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@2f20704f]
+2019-05-13 01:37:42,700 INFO  [STDOUT] 01:37:42,700 INFO  [UiApplicationContextUtils] Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@26277fd7]
+2019-05-13 01:37:42,700 INFO  [STDOUT] 01:37:42,700 INFO  [DefaultListableBeanFactory] Pre-instantiating singletons in factory [org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [unidadeGerencialTreeController,ajaxCompetenciaOrganizacionalController,indexController,anomaliaReport,auditoriaGestaoReport,iniciativaPlanoAcaoReport,alcanceMetaInstitucionalReport,apresentacaoResultadosReport,mapaEstrategicoReport,anomaliaSinteticoPorStatusReport,pendenciaAnomaliaReport,anomaliaListagemReport,acaoPreventivaReport,mapaNegocioReport,auditoriaInternaReport,anomaliaDiagramaReport,diarioBordoReport,indicadoresEstrategicoReport,pendenciaCadastroReport,matrizFCSReport,mapaCompetenciaReport,desempenhoReport,unidadeGerencialAutoCompleteController,distribuicaoPesosIndicadoresProcess,sobreGeplanesProcess,envioEmailProcess,definicaoNegocioProcess,lancamentoValorRealProcess,sobreLinkComProcess,apresentacaoResultadosProcess,definicaoEstrategiaProcess,iniciativaPlanoAcaoProcess,solicitacaoRepactuacaoIndicadorProcess,logProcessoProcess,matrizFCSProcess,painelControle,definicaoCompetenciaProcess,solicitacaoCancelamentoIndicadorProcess,mapaNegocio,alterarSenhaProcess,distribuicaoPesosIndicadoresService,lancamentoValorRealService,controleCadastroService,parametrosSistemaCrud,graficosDashboardProcess,emailHistoricoCrud,unidadeMedidaCrud,papelCrud,nivelHierarquicoCrud,auditoriaInternaCrud,indicadorCrud,mensagemCrud,planoGestaoCrud,fatorAvaliacaoCrud,perspectivaCrud,acaoPreventivaCrud,objetivoEstrategicoCrud,modeloAuditoriaGestaoCrud,usuarioCrud,unidadeGerencialCrud,auditoriaGestaoCrud,anomaliaCrud,ocorrenciaCrud,normaCrud,competenciaOrganizacionalCrud,genericService,mapaNegocioService,unidadeMedidaService,modeloAuditoriaGestaoService,anexoIndicadorService,arquivoService,perspectivaService,requisitoNormaService,mapaCompetenciaService,auditoriaGestaoService,comentarioItemService,fatorAvaliacaoService,matrizFCSIniciativaFatorService,competenciaService,planoAcaoService,objetivoEstrategicoService,acompanhamentoIndicadorService,perspectivaMapaEstrategicoService,mapaEstrategicoService,unidadeGerencialService,anomaliaService,acaoPreventivaService,usuarioUnidadeGerencialService,normaService,iniciativaService,parametrosSistemaService,planoGestaoService,auditoriaGestaoIndicadorService,objetivoMapaEstrategicoService,comentarioService,auditoriaInternaService,usuarioPapelService,causaEfeitoService,mensagemService,itemModeloAuditoriaGestaoService,itemFatorAvaliacaoService,competenciaOrganizacionalService,atividadeService,emailHistoricoUsuarioService,indicadorService,solicitacaoRepactuacaoIndicadorService,ocorrenciaService,telaService,emailHistoricoService,matrizFCSService,nivelHierarquicoService,anexoAnomaliaService,logProcessoService,usuarioService,painelIndicadorFiltroService,permissaoService,papelService,auditoriaGestaoIndicadorItemService,matrizFCSFatorService,matrizFCSIniciativaService,solicitacaoCancelamentoIndicadorService,genericDAO,perspectivaMapaEstrategicoDAO,logProcessoDAO,competenciaDAO,comentarioDAO,nivelHierarquicoDAO,matrizFCSIniciativaDAO,acompanhamentoIndicadorDAO,permissaoDAO,auditoriaGestaoDAO,emailHistoricoUsuarioDAO,mensagemDAO,matrizFCSIniciativaFatorDAO,comentarioItemDAO,auditoriaGestaoIndicadorItemDAO,mapaNegocioDAO,telaDAO,solicitacaoCancelamentoIndicadorDAO,perspectivaDAO,ocorrenciaDAO,itemModeloAuditoriaGestaoDAO,normaDAO,objetivoMapaEstrategicoDAO,papelDAO,planoGestaoDAO,mapaEstrategicoDAO,usuarioPapelDAO,matrizFCSFatorDAO,painelIndicadorFiltroDAO,anomaliaDAO,anexoIndicadorDAO,unidadeMedidaDAO,anexoAnomaliaDAO,competenciaOrganizacionalDAO,unidadeGerencialDAO,usuarioUnidadeGerencialDAO,indicadorDAO,mapaCompetenciaDAO,matrizFCSDAO,atividadeDAO,arquivoDAO,modeloAuditoriaGestaoDAO,parametrosSistemaDAO,solicitacaoRepactuacaoIndicadorDAO,fatorAvaliacaoDAO,auditoriaInternaDAO,iniciativaDAO,emailHistoricoDAO,requisitoNormaDAO,usuarioDAO,planoAcaoDAO,itemFatorAvaliacaoDAO,acaoPreventivaDAO,auditoriaGestaoIndicadorDAO,causaEfeitoDAO,objetivoEstrategicoDAO]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [config,authenticationConfig,dataSource,sessionFactory,hibernateTemplate,sqlErrorCodesTranslator,transactionTemplate,hibernateTransactionManager,jdbcTemplate,neoImageResolver,neoFormater,authorizationDAO,multipartResolver]; root of BeanFactory hierarchy]
+2019-05-13 01:37:45,405 INFO  [STDOUT] 01:37:45,405 INFO  [ContextLoader] Using context class [br.com.linkcom.neo.core.web.init.AnnotationsXmlWebApplicationContext] for root WebApplicationContext
+2019-05-13 01:37:45,406 INFO  [STDOUT] 01:37:45,406 INFO  [ContextLoader] Root WebApplicationContext: initialization completed in 6394 ms
+2019-05-13 01:37:45,407 INFO  [STDOUT] 01:37:45,407 INFO  [RequestFilter] Initializing filter 'requestFilter'
+2019-05-13 01:37:45,417 INFO  [STDOUT] 01:37:45,417 INFO  [RequestFilter] Filter 'requestFilter' configured successfully
+2019-05-13 01:37:45,427 INFO  [STDOUT] 01:37:45,427 INFO  [DispatcherServlet] Initializing servlet 'util'
+2019-05-13 01:37:45,470 INFO  [STDOUT] 01:37:45,470 INFO  [DispatcherServlet] FrameworkServlet 'util': initialization started
+2019-05-13 01:37:45,470 INFO  [STDOUT] 01:37:45,470 INFO  [[/geplanes_bsc]] Loading WebApplicationContext for Spring FrameworkServlet 'util'
+2019-05-13 01:37:45,471 INFO  [STDOUT] 01:37:45,471 INFO  [AnnotationsXmlWebApplicationContext] Bean factory for application context [WebApplicationContext for namespace 'util-servlet']: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans []; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [unidadeGerencialTreeController,ajaxCompetenciaOrganizacionalController,indexController,anomaliaReport,auditoriaGestaoReport,iniciativaPlanoAcaoReport,alcanceMetaInstitucionalReport,apresentacaoResultadosReport,mapaEstrategicoReport,anomaliaSinteticoPorStatusReport,pendenciaAnomaliaReport,anomaliaListagemReport,acaoPreventivaReport,mapaNegocioReport,auditoriaInternaReport,anomaliaDiagramaReport,diarioBordoReport,indicadoresEstrategicoReport,pendenciaCadastroReport,matrizFCSReport,mapaCompetenciaReport,desempenhoReport,unidadeGerencialAutoCompleteController,distribuicaoPesosIndicadoresProcess,sobreGeplanesProcess,envioEmailProcess,definicaoNegocioProcess,lancamentoValorRealProcess,sobreLinkComProcess,apresentacaoResultadosProcess,definicaoEstrategiaProcess,iniciativaPlanoAcaoProcess,solicitacaoRepactuacaoIndicadorProcess,logProcessoProcess,matrizFCSProcess,painelControle,definicaoCompetenciaProcess,solicitacaoCancelamentoIndicadorProcess,mapaNegocio,alterarSenhaProcess,distribuicaoPesosIndicadoresService,lancamentoValorRealService,controleCadastroService,parametrosSistemaCrud,graficosDashboardProcess,emailHistoricoCrud,unidadeMedidaCrud,papelCrud,nivelHierarquicoCrud,auditoriaInternaCrud,indicadorCrud,mensagemCrud,planoGestaoCrud,fatorAvaliacaoCrud,perspectivaCrud,acaoPreventivaCrud,objetivoEstrategicoCrud,modeloAuditoriaGestaoCrud,usuarioCrud,unidadeGerencialCrud,auditoriaGestaoCrud,anomaliaCrud,ocorrenciaCrud,normaCrud,competenciaOrganizacionalCrud,genericService,mapaNegocioService,unidadeMedidaService,modeloAuditoriaGestaoService,anexoIndicadorService,arquivoService,perspectivaService,requisitoNormaService,mapaCompetenciaService,auditoriaGestaoService,comentarioItemService,fatorAvaliacaoService,matrizFCSIniciativaFatorService,competenciaService,planoAcaoService,objetivoEstrategicoService,acompanhamentoIndicadorService,perspectivaMapaEstrategicoService,mapaEstrategicoService,unidadeGerencialService,anomaliaService,acaoPreventivaService,usuarioUnidadeGerencialService,normaService,iniciativaService,parametrosSistemaService,planoGestaoService,auditoriaGestaoIndicadorService,objetivoMapaEstrategicoService,comentarioService,auditoriaInternaService,usuarioPapelService,causaEfeitoService,mensagemService,itemModeloAuditoriaGestaoService,itemFatorAvaliacaoService,competenciaOrganizacionalService,atividadeService,emailHistoricoUsuarioService,indicadorService,solicitacaoRepactuacaoIndicadorService,ocorrenciaService,telaService,emailHistoricoService,matrizFCSService,nivelHierarquicoService,anexoAnomaliaService,logProcessoService,usuarioService,painelIndicadorFiltroService,permissaoService,papelService,auditoriaGestaoIndicadorItemService,matrizFCSFatorService,matrizFCSIniciativaService,solicitacaoCancelamentoIndicadorService,genericDAO,perspectivaMapaEstrategicoDAO,logProcessoDAO,competenciaDAO,comentarioDAO,nivelHierarquicoDAO,matrizFCSIniciativaDAO,acompanhamentoIndicadorDAO,permissaoDAO,auditoriaGestaoDAO,emailHistoricoUsuarioDAO,mensagemDAO,matrizFCSIniciativaFatorDAO,comentarioItemDAO,auditoriaGestaoIndicadorItemDAO,mapaNegocioDAO,telaDAO,solicitacaoCancelamentoIndicadorDAO,perspectivaDAO,ocorrenciaDAO,itemModeloAuditoriaGestaoDAO,normaDAO,objetivoMapaEstrategicoDAO,papelDAO,planoGestaoDAO,mapaEstrategicoDAO,usuarioPapelDAO,matrizFCSFatorDAO,painelIndicadorFiltroDAO,anomaliaDAO,anexoIndicadorDAO,unidadeMedidaDAO,anexoAnomaliaDAO,competenciaOrganizacionalDAO,unidadeGerencialDAO,usuarioUnidadeGerencialDAO,indicadorDAO,mapaCompetenciaDAO,matrizFCSDAO,atividadeDAO,arquivoDAO,modeloAuditoriaGestaoDAO,parametrosSistemaDAO,solicitacaoRepactuacaoIndicadorDAO,fatorAvaliacaoDAO,auditoriaInternaDAO,iniciativaDAO,emailHistoricoDAO,requisitoNormaDAO,usuarioDAO,planoAcaoDAO,itemFatorAvaliacaoDAO,acaoPreventivaDAO,auditoriaGestaoIndicadorDAO,causaEfeitoDAO,objetivoEstrategicoDAO]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [config,authenticationConfig,dataSource,sessionFactory,hibernateTemplate,sqlErrorCodesTranslator,transactionTemplate,hibernateTransactionManager,jdbcTemplate,neoImageResolver,neoFormater,authorizationDAO,multipartResolver]; root of BeanFactory hierarchy
+2019-05-13 01:37:45,480 INFO  [STDOUT] 01:37:45,480 INFO  [AnnotationsXmlWebApplicationContext] No beans defined in application context [WebApplicationContext for namespace 'util-servlet']
+2019-05-13 01:37:45,480 INFO  [STDOUT] 01:37:45,480 INFO  [AnnotationsXmlWebApplicationContext] Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@5f0b59cb]
+2019-05-13 01:37:45,480 INFO  [STDOUT] 01:37:45,480 INFO  [AnnotationsXmlWebApplicationContext] Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@616a04c6]
+2019-05-13 01:37:45,480 INFO  [STDOUT] 01:37:45,480 INFO  [UiApplicationContextUtils] Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@7aa258f7]
+2019-05-13 01:37:45,480 INFO  [STDOUT] 01:37:45,480 INFO  [DefaultListableBeanFactory] Pre-instantiating singletons in factory [org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans []; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [unidadeGerencialTreeController,ajaxCompetenciaOrganizacionalController,indexController,anomaliaReport,auditoriaGestaoReport,iniciativaPlanoAcaoReport,alcanceMetaInstitucionalReport,apresentacaoResultadosReport,mapaEstrategicoReport,anomaliaSinteticoPorStatusReport,pendenciaAnomaliaReport,anomaliaListagemReport,acaoPreventivaReport,mapaNegocioReport,auditoriaInternaReport,anomaliaDiagramaReport,diarioBordoReport,indicadoresEstrategicoReport,pendenciaCadastroReport,matrizFCSReport,mapaCompetenciaReport,desempenhoReport,unidadeGerencialAutoCompleteController,distribuicaoPesosIndicadoresProcess,sobreGeplanesProcess,envioEmailProcess,definicaoNegocioProcess,lancamentoValorRealProcess,sobreLinkComProcess,apresentacaoResultadosProcess,definicaoEstrategiaProcess,iniciativaPlanoAcaoProcess,solicitacaoRepactuacaoIndicadorProcess,logProcessoProcess,matrizFCSProcess,painelControle,definicaoCompetenciaProcess,solicitacaoCancelamentoIndicadorProcess,mapaNegocio,alterarSenhaProcess,distribuicaoPesosIndicadoresService,lancamentoValorRealService,controleCadastroService,parametrosSistemaCrud,graficosDashboardProcess,emailHistoricoCrud,unidadeMedidaCrud,papelCrud,nivelHierarquicoCrud,auditoriaInternaCrud,indicadorCrud,mensagemCrud,planoGestaoCrud,fatorAvaliacaoCrud,perspectivaCrud,acaoPreventivaCrud,objetivoEstrategicoCrud,modeloAuditoriaGestaoCrud,usuarioCrud,unidadeGerencialCrud,auditoriaGestaoCrud,anomaliaCrud,ocorrenciaCrud,normaCrud,competenciaOrganizacionalCrud,genericService,mapaNegocioService,unidadeMedidaService,modeloAuditoriaGestaoService,anexoIndicadorService,arquivoService,perspectivaService,requisitoNormaService,mapaCompetenciaService,auditoriaGestaoService,comentarioItemService,fatorAvaliacaoService,matrizFCSIniciativaFatorService,competenciaService,planoAcaoService,objetivoEstrategicoService,acompanhamentoIndicadorService,perspectivaMapaEstrategicoService,mapaEstrategicoService,unidadeGerencialService,anomaliaService,acaoPreventivaService,usuarioUnidadeGerencialService,normaService,iniciativaService,parametrosSistemaService,planoGestaoService,auditoriaGestaoIndicadorService,objetivoMapaEstrategicoService,comentarioService,auditoriaInternaService,usuarioPapelService,causaEfeitoService,mensagemService,itemModeloAuditoriaGestaoService,itemFatorAvaliacaoService,competenciaOrganizacionalService,atividadeService,emailHistoricoUsuarioService,indicadorService,solicitacaoRepactuacaoIndicadorService,ocorrenciaService,telaService,emailHistoricoService,matrizFCSService,nivelHierarquicoService,anexoAnomaliaService,logProcessoService,usuarioService,painelIndicadorFiltroService,permissaoService,papelService,auditoriaGestaoIndicadorItemService,matrizFCSFatorService,matrizFCSIniciativaService,solicitacaoCancelamentoIndicadorService,genericDAO,perspectivaMapaEstrategicoDAO,logProcessoDAO,competenciaDAO,comentarioDAO,nivelHierarquicoDAO,matrizFCSIniciativaDAO,acompanhamentoIndicadorDAO,permissaoDAO,auditoriaGestaoDAO,emailHistoricoUsuarioDAO,mensagemDAO,matrizFCSIniciativaFatorDAO,comentarioItemDAO,auditoriaGestaoIndicadorItemDAO,mapaNegocioDAO,telaDAO,solicitacaoCancelamentoIndicadorDAO,perspectivaDAO,ocorrenciaDAO,itemModeloAuditoriaGestaoDAO,normaDAO,objetivoMapaEstrategicoDAO,papelDAO,planoGestaoDAO,mapaEstrategicoDAO,usuarioPapelDAO,matrizFCSFatorDAO,painelIndicadorFiltroDAO,anomaliaDAO,anexoIndicadorDAO,unidadeMedidaDAO,anexoAnomaliaDAO,competenciaOrganizacionalDAO,unidadeGerencialDAO,usuarioUnidadeGerencialDAO,indicadorDAO,mapaCompetenciaDAO,matrizFCSDAO,atividadeDAO,arquivoDAO,modeloAuditoriaGestaoDAO,parametrosSistemaDAO,solicitacaoRepactuacaoIndicadorDAO,fatorAvaliacaoDAO,auditoriaInternaDAO,iniciativaDAO,emailHistoricoDAO,requisitoNormaDAO,usuarioDAO,planoAcaoDAO,itemFatorAvaliacaoDAO,acaoPreventivaDAO,auditoriaGestaoIndicadorDAO,causaEfeitoDAO,objetivoEstrategicoDAO]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [config,authenticationConfig,dataSource,sessionFactory,hibernateTemplate,sqlErrorCodesTranslator,transactionTemplate,hibernateTransactionManager,jdbcTemplate,neoImageResolver,neoFormater,authorizationDAO,multipartResolver]; root of BeanFactory hierarchy]
+2019-05-13 01:37:45,482 INFO  [STDOUT] 01:37:45,482 INFO  [DispatcherServlet] Using context class [br.com.linkcom.neo.core.web.init.AnnotationsXmlWebApplicationContext] for servlet 'util'
+2019-05-13 01:37:45,484 INFO  [STDOUT] 01:37:45,484 INFO  [DispatcherServlet] Using MultipartResolver [br.com.linkcom.neo.controller.NeoCommonsMultipartResolver@5845045d]
+2019-05-13 01:37:45,486 INFO  [STDOUT] 01:37:45,486 INFO  [DispatcherServlet] Unable to locate LocaleResolver with name 'localeResolver': using default [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@272a3857]
+2019-05-13 01:37:45,489 INFO  [STDOUT] 01:37:45,489 INFO  [DispatcherServlet] Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@48b1df68]
+2019-05-13 01:37:45,497 INFO  [STDOUT] 01:37:45,497 INFO  [AnnotationsHandlerMapping] Inicializando configuração dos Controllers para o modulo: /util
+2019-05-13 01:37:45,500 INFO  [STDOUT] 01:37:45,500 INFO  [DispatcherServlet] No HandlerMappings found in servlet 'util': using default
+2019-05-13 01:37:45,507 INFO  [STDOUT] 01:37:45,507 INFO  [DispatcherServlet] No HandlerAdapters found in servlet 'util': using default
+2019-05-13 01:37:45,514 INFO  [STDOUT] 01:37:45,514 INFO  [DispatcherServlet] No ViewResolvers found in servlet 'util': using default
+2019-05-13 01:37:45,514 INFO  [STDOUT] 01:37:45,514 INFO  [DispatcherServlet] FrameworkServlet 'util': initialization completed in 44 ms
+2019-05-13 01:37:45,514 INFO  [STDOUT] 01:37:45,514 INFO  [DispatcherServlet] Servlet 'util' configured successfully
+2019-05-13 01:37:45,514 INFO  [STDOUT] 01:37:45,514 INFO  [DispatcherServlet] Initializing servlet 'sgm'
+2019-05-13 01:37:45,515 INFO  [STDOUT] 01:37:45,515 INFO  [DispatcherServlet] FrameworkServlet 'sgm': initialization started
+2019-05-13 01:37:45,515 INFO  [STDOUT] 01:37:45,515 INFO  [[/geplanes_bsc]] Loading WebApplicationContext for Spring FrameworkServlet 'sgm'
+2019-05-13 01:37:45,515 INFO  [STDOUT] 01:37:45,515 INFO  [AnnotationsXmlWebApplicationContext] Bean factory for application context [WebApplicationContext for namespace 'sgm-servlet']: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans []; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [unidadeGerencialTreeController,ajaxCompetenciaOrganizacionalController,indexController,anomaliaReport,auditoriaGestaoReport,iniciativaPlanoAcaoReport,alcanceMetaInstitucionalReport,apresentacaoResultadosReport,mapaEstrategicoReport,anomaliaSinteticoPorStatusReport,pendenciaAnomaliaReport,anomaliaListagemReport,acaoPreventivaReport,mapaNegocioReport,auditoriaInternaReport,anomaliaDiagramaReport,diarioBordoReport,indicadoresEstrategicoReport,pendenciaCadastroReport,matrizFCSReport,mapaCompetenciaReport,desempenhoReport,unidadeGerencialAutoCompleteController,distribuicaoPesosIndicadoresProcess,sobreGeplanesProcess,envioEmailProcess,definicaoNegocioProcess,lancamentoValorRealProcess,sobreLinkComProcess,apresentacaoResultadosProcess,definicaoEstrategiaProcess,iniciativaPlanoAcaoProcess,solicitacaoRepactuacaoIndicadorProcess,logProcessoProcess,matrizFCSProcess,painelControle,definicaoCompetenciaProcess,solicitacaoCancelamentoIndicadorProcess,mapaNegocio,alterarSenhaProcess,distribuicaoPesosIndicadoresService,lancamentoValorRealService,controleCadastroService,parametrosSistemaCrud,graficosDashboardProcess,emailHistoricoCrud,unidadeMedidaCrud,papelCrud,nivelHierarquicoCrud,auditoriaInternaCrud,indicadorCrud,mensagemCrud,planoGestaoCrud,fatorAvaliacaoCrud,perspectivaCrud,acaoPreventivaCrud,objetivoEstrategicoCrud,modeloAuditoriaGestaoCrud,usuarioCrud,unidadeGerencialCrud,auditoriaGestaoCrud,anomaliaCrud,ocorrenciaCrud,normaCrud,competenciaOrganizacionalCrud,genericService,mapaNegocioService,unidadeMedidaService,modeloAuditoriaGestaoService,anexoIndicadorService,arquivoService,perspectivaService,requisitoNormaService,mapaCompetenciaService,auditoriaGestaoService,comentarioItemService,fatorAvaliacaoService,matrizFCSIniciativaFatorService,competenciaService,planoAcaoService,objetivoEstrategicoService,acompanhamentoIndicadorService,perspectivaMapaEstrategicoService,mapaEstrategicoService,unidadeGerencialService,anomaliaService,acaoPreventivaService,usuarioUnidadeGerencialService,normaService,iniciativaService,parametrosSistemaService,planoGestaoService,auditoriaGestaoIndicadorService,objetivoMapaEstrategicoService,comentarioService,auditoriaInternaService,usuarioPapelService,causaEfeitoService,mensagemService,itemModeloAuditoriaGestaoService,itemFatorAvaliacaoService,competenciaOrganizacionalService,atividadeService,emailHistoricoUsuarioService,indicadorService,solicitacaoRepactuacaoIndicadorService,ocorrenciaService,telaService,emailHistoricoService,matrizFCSService,nivelHierarquicoService,anexoAnomaliaService,logProcessoService,usuarioService,painelIndicadorFiltroService,permissaoService,papelService,auditoriaGestaoIndicadorItemService,matrizFCSFatorService,matrizFCSIniciativaService,solicitacaoCancelamentoIndicadorService,genericDAO,perspectivaMapaEstrategicoDAO,logProcessoDAO,competenciaDAO,comentarioDAO,nivelHierarquicoDAO,matrizFCSIniciativaDAO,acompanhamentoIndicadorDAO,permissaoDAO,auditoriaGestaoDAO,emailHistoricoUsuarioDAO,mensagemDAO,matrizFCSIniciativaFatorDAO,comentarioItemDAO,auditoriaGestaoIndicadorItemDAO,mapaNegocioDAO,telaDAO,solicitacaoCancelamentoIndicadorDAO,perspectivaDAO,ocorrenciaDAO,itemModeloAuditoriaGestaoDAO,normaDAO,objetivoMapaEstrategicoDAO,papelDAO,planoGestaoDAO,mapaEstrategicoDAO,usuarioPapelDAO,matrizFCSFatorDAO,painelIndicadorFiltroDAO,anomaliaDAO,anexoIndicadorDAO,unidadeMedidaDAO,anexoAnomaliaDAO,competenciaOrganizacionalDAO,unidadeGerencialDAO,usuarioUnidadeGerencialDAO,indicadorDAO,mapaCompetenciaDAO,matrizFCSDAO,atividadeDAO,arquivoDAO,modeloAuditoriaGestaoDAO,parametrosSistemaDAO,solicitacaoRepactuacaoIndicadorDAO,fatorAvaliacaoDAO,auditoriaInternaDAO,iniciativaDAO,emailHistoricoDAO,requisitoNormaDAO,usuarioDAO,planoAcaoDAO,itemFatorAvaliacaoDAO,acaoPreventivaDAO,auditoriaGestaoIndicadorDAO,causaEfeitoDAO,objetivoEstrategicoDAO]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [config,authenticationConfig,dataSource,sessionFactory,hibernateTemplate,sqlErrorCodesTranslator,transactionTemplate,hibernateTransactionManager,jdbcTemplate,neoImageResolver,neoFormater,authorizationDAO,multipartResolver]; root of BeanFactory hierarchy
+2019-05-13 01:37:45,516 INFO  [STDOUT] 01:37:45,516 INFO  [AnnotationsXmlWebApplicationContext] No beans defined in application context [WebApplicationContext for namespace 'sgm-servlet']
+2019-05-13 01:37:45,516 INFO  [STDOUT] 01:37:45,516 INFO  [AnnotationsXmlWebApplicationContext] Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@5da19fa4]
+2019-05-13 01:37:45,517 INFO  [STDOUT] 01:37:45,517 INFO  [AnnotationsXmlWebApplicationContext] Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@24e3314e]
+2019-05-13 01:37:45,517 INFO  [STDOUT] 01:37:45,517 INFO  [UiApplicationContextUtils] Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@50a55b2a]
+2019-05-13 01:37:45,517 INFO  [STDOUT] 01:37:45,517 INFO  [DefaultListableBeanFactory] Pre-instantiating singletons in factory [org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans []; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [unidadeGerencialTreeController,ajaxCompetenciaOrganizacionalController,indexController,anomaliaReport,auditoriaGestaoReport,iniciativaPlanoAcaoReport,alcanceMetaInstitucionalReport,apresentacaoResultadosReport,mapaEstrategicoReport,anomaliaSinteticoPorStatusReport,pendenciaAnomaliaReport,anomaliaListagemReport,acaoPreventivaReport,mapaNegocioReport,auditoriaInternaReport,anomaliaDiagramaReport,diarioBordoReport,indicadoresEstrategicoReport,pendenciaCadastroReport,matrizFCSReport,mapaCompetenciaReport,desempenhoReport,unidadeGerencialAutoCompleteController,distribuicaoPesosIndicadoresProcess,sobreGeplanesProcess,envioEmailProcess,definicaoNegocioProcess,lancamentoValorRealProcess,sobreLinkComProcess,apresentacaoResultadosProcess,definicaoEstrategiaProcess,iniciativaPlanoAcaoProcess,solicitacaoRepactuacaoIndicadorProcess,logProcessoProcess,matrizFCSProcess,painelControle,definicaoCompetenciaProcess,solicitacaoCancelamentoIndicadorProcess,mapaNegocio,alterarSenhaProcess,distribuicaoPesosIndicadoresService,lancamentoValorRealService,controleCadastroService,parametrosSistemaCrud,graficosDashboardProcess,emailHistoricoCrud,unidadeMedidaCrud,papelCrud,nivelHierarquicoCrud,auditoriaInternaCrud,indicadorCrud,mensagemCrud,planoGestaoCrud,fatorAvaliacaoCrud,perspectivaCrud,acaoPreventivaCrud,objetivoEstrategicoCrud,modeloAuditoriaGestaoCrud,usuarioCrud,unidadeGerencialCrud,auditoriaGestaoCrud,anomaliaCrud,ocorrenciaCrud,normaCrud,competenciaOrganizacionalCrud,genericService,mapaNegocioService,unidadeMedidaService,modeloAuditoriaGestaoService,anexoIndicadorService,arquivoService,perspectivaService,requisitoNormaService,mapaCompetenciaService,auditoriaGestaoService,comentarioItemService,fatorAvaliacaoService,matrizFCSIniciativaFatorService,competenciaService,planoAcaoService,objetivoEstrategicoService,acompanhamentoIndicadorService,perspectivaMapaEstrategicoService,mapaEstrategicoService,unidadeGerencialService,anomaliaService,acaoPreventivaService,usuarioUnidadeGerencialService,normaService,iniciativaService,parametrosSistemaService,planoGestaoService,auditoriaGestaoIndicadorService,objetivoMapaEstrategicoService,comentarioService,auditoriaInternaService,usuarioPapelService,causaEfeitoService,mensagemService,itemModeloAuditoriaGestaoService,itemFatorAvaliacaoService,competenciaOrganizacionalService,atividadeService,emailHistoricoUsuarioService,indicadorService,solicitacaoRepactuacaoIndicadorService,ocorrenciaService,telaService,emailHistoricoService,matrizFCSService,nivelHierarquicoService,anexoAnomaliaService,logProcessoService,usuarioService,painelIndicadorFiltroService,permissaoService,papelService,auditoriaGestaoIndicadorItemService,matrizFCSFatorService,matrizFCSIniciativaService,solicitacaoCancelamentoIndicadorService,genericDAO,perspectivaMapaEstrategicoDAO,logProcessoDAO,competenciaDAO,comentarioDAO,nivelHierarquicoDAO,matrizFCSIniciativaDAO,acompanhamentoIndicadorDAO,permissaoDAO,auditoriaGestaoDAO,emailHistoricoUsuarioDAO,mensagemDAO,matrizFCSIniciativaFatorDAO,comentarioItemDAO,auditoriaGestaoIndicadorItemDAO,mapaNegocioDAO,telaDAO,solicitacaoCancelamentoIndicadorDAO,perspectivaDAO,ocorrenciaDAO,itemModeloAuditoriaGestaoDAO,normaDAO,objetivoMapaEstrategicoDAO,papelDAO,planoGestaoDAO,mapaEstrategicoDAO,usuarioPapelDAO,matrizFCSFatorDAO,painelIndicadorFiltroDAO,anomaliaDAO,anexoIndicadorDAO,unidadeMedidaDAO,anexoAnomaliaDAO,competenciaOrganizacionalDAO,unidadeGerencialDAO,usuarioUnidadeGerencialDAO,indicadorDAO,mapaCompetenciaDAO,matrizFCSDAO,atividadeDAO,arquivoDAO,modeloAuditoriaGestaoDAO,parametrosSistemaDAO,solicitacaoRepactuacaoIndicadorDAO,fatorAvaliacaoDAO,auditoriaInternaDAO,iniciativaDAO,emailHistoricoDAO,requisitoNormaDAO,usuarioDAO,planoAcaoDAO,itemFatorAvaliacaoDAO,acaoPreventivaDAO,auditoriaGestaoIndicadorDAO,causaEfeitoDAO,objetivoEstrategicoDAO]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [config,authenticationConfig,dataSource,sessionFactory,hibernateTemplate,sqlErrorCodesTranslator,transactionTemplate,hibernateTransactionManager,jdbcTemplate,neoImageResolver,neoFormater,authorizationDAO,multipartResolver]; root of BeanFactory hierarchy]
+2019-05-13 01:37:45,518 INFO  [STDOUT] 01:37:45,518 INFO  [DispatcherServlet] Using context class [br.com.linkcom.neo.core.web.init.AnnotationsXmlWebApplicationContext] for servlet 'sgm'
+2019-05-13 01:37:45,518 INFO  [STDOUT] 01:37:45,518 INFO  [DispatcherServlet] Using MultipartResolver [br.com.linkcom.neo.controller.NeoCommonsMultipartResolver@5845045d]
+2019-05-13 01:37:45,519 INFO  [STDOUT] 01:37:45,519 INFO  [DispatcherServlet] Unable to locate LocaleResolver with name 'localeResolver': using default [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@536a690d]
+2019-05-13 01:37:45,519 INFO  [STDOUT] 01:37:45,519 INFO  [DispatcherServlet] Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@2e7807b]
+2019-05-13 01:37:45,520 INFO  [STDOUT] 01:37:45,520 INFO  [AnnotationsHandlerMapping] Inicializando configuração dos Controllers para o modulo: /sgm
+2019-05-13 01:37:45,530 INFO  [STDOUT] 01:37:45,530 INFO  [DispatcherServlet] No HandlerMappings found in servlet 'sgm': using default
+2019-05-13 01:37:45,530 INFO  [STDOUT] 01:37:45,530 INFO  [DispatcherServlet] No HandlerAdapters found in servlet 'sgm': using default
+2019-05-13 01:37:45,530 INFO  [STDOUT] 01:37:45,530 INFO  [DispatcherServlet] No ViewResolvers found in servlet 'sgm': using default
+2019-05-13 01:37:45,530 INFO  [STDOUT] 01:37:45,530 INFO  [DispatcherServlet] FrameworkServlet 'sgm': initialization completed in 15 ms
+2019-05-13 01:37:45,531 INFO  [STDOUT] 01:37:45,531 INFO  [DispatcherServlet] Servlet 'sgm' configured successfully
+2019-05-13 01:37:45,556 INFO  [org.jboss.web.tomcat.tc5.TomcatDeployer] deploy, ctxPath=/jmx-console, warUrl=.../deploy/jmx-console.war/
+2019-05-13 01:37:45,756 INFO  [org.apache.coyote.http11.Http11BaseProtocol] Starting Coyote HTTP/1.1 on http-0.0.0.0-8080
+2019-05-13 01:37:45,800 INFO  [org.apache.jk.common.ChannelSocket] JK: ajp13 listening on /0.0.0.0:8009
+2019-05-13 01:37:45,804 INFO  [org.apache.jk.server.JkMain] Jk running ID=0 time=0/21  config=null
+2019-05-13 01:37:45,807 INFO  [org.jboss.system.server.Server] JBoss (MX MicroKernel) [4.0.5.GA (build: CVSTag=Branch_4_0 date=200610162339)] Started in 11s:437ms
+2019-05-13 01:38:20,769 INFO  [org.jboss.system.server.Server] Runtime shutdown hook called, forceHalt: true
+2019-05-13 01:38:20,770 INFO  [org.jboss.system.server.Server] JBoss SHUTDOWN: Undeploying all packages
+2019-05-13 01:38:20,771 INFO  [org.jboss.web.tomcat.tc5.TomcatDeployer] undeploy, ctxPath=/jmx-console, warUrl=.../deploy/jmx-console.war/
+2019-05-13 01:38:20,779 INFO  [org.jboss.web.tomcat.tc5.TomcatDeployer] undeploy, ctxPath=/geplanes_bsc, warUrl=.../deploy/geplanes_bsc.war/
+2019-05-13 01:38:20,782 INFO  [STDOUT] 01:38:20,781 INFO  [[/geplanes_bsc]] Closing WebApplicationContext of Spring FrameworkServlet 'util'
+2019-05-13 01:38:20,782 INFO  [STDOUT] 01:38:20,782 INFO  [AnnotationsXmlWebApplicationContext] Closing application context [WebApplicationContext for namespace 'util-servlet']
+2019-05-13 01:38:20,783 INFO  [STDOUT] 01:38:20,782 INFO  [DefaultListableBeanFactory] Destroying singletons in factory {org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans []; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [unidadeGerencialTreeController,ajaxCompetenciaOrganizacionalController,indexController,anomaliaReport,auditoriaGestaoReport,iniciativaPlanoAcaoReport,alcanceMetaInstitucionalReport,apresentacaoResultadosReport,mapaEstrategicoReport,anomaliaSinteticoPorStatusReport,pendenciaAnomaliaReport,anomaliaListagemReport,acaoPreventivaReport,mapaNegocioReport,auditoriaInternaReport,anomaliaDiagramaReport,diarioBordoReport,indicadoresEstrategicoReport,pendenciaCadastroReport,matrizFCSReport,mapaCompetenciaReport,desempenhoReport,unidadeGerencialAutoCompleteController,distribuicaoPesosIndicadoresProcess,sobreGeplanesProcess,envioEmailProcess,definicaoNegocioProcess,lancamentoValorRealProcess,sobreLinkComProcess,apresentacaoResultadosProcess,definicaoEstrategiaProcess,iniciativaPlanoAcaoProcess,solicitacaoRepactuacaoIndicadorProcess,logProcessoProcess,matrizFCSProcess,painelControle,definicaoCompetenciaProcess,solicitacaoCancelamentoIndicadorProcess,mapaNegocio,alterarSenhaProcess,distribuicaoPesosIndicadoresService,lancamentoValorRealService,controleCadastroService,parametrosSistemaCrud,graficosDashboardProcess,emailHistoricoCrud,unidadeMedidaCrud,papelCrud,nivelHierarquicoCrud,auditoriaInternaCrud,indicadorCrud,mensagemCrud,planoGestaoCrud,fatorAvaliacaoCrud,perspectivaCrud,acaoPreventivaCrud,objetivoEstrategicoCrud,modeloAuditoriaGestaoCrud,usuarioCrud,unidadeGerencialCrud,auditoriaGestaoCrud,anomaliaCrud,ocorrenciaCrud,normaCrud,competenciaOrganizacionalCrud,genericService,mapaNegocioService,unidadeMedidaService,modeloAuditoriaGestaoService,anexoIndicadorService,arquivoService,perspectivaService,requisitoNormaService,mapaCompetenciaService,auditoriaGestaoService,comentarioItemService,fatorAvaliacaoService,matrizFCSIniciativaFatorService,competenciaService,planoAcaoService,objetivoEstrategicoService,acompanhamentoIndicadorService,perspectivaMapaEstrategicoService,mapaEstrategicoService,unidadeGerencialService,anomaliaService,acaoPreventivaService,usuarioUnidadeGerencialService,normaService,iniciativaService,parametrosSistemaService,planoGestaoService,auditoriaGestaoIndicadorService,objetivoMapaEstrategicoService,comentarioService,auditoriaInternaService,usuarioPapelService,causaEfeitoService,mensagemService,itemModeloAuditoriaGestaoService,itemFatorAvaliacaoService,competenciaOrganizacionalService,atividadeService,emailHistoricoUsuarioService,indicadorService,solicitacaoRepactuacaoIndicadorService,ocorrenciaService,telaService,emailHistoricoService,matrizFCSService,nivelHierarquicoService,anexoAnomaliaService,logProcessoService,usuarioService,painelIndicadorFiltroService,permissaoService,papelService,auditoriaGestaoIndicadorItemService,matrizFCSFatorService,matrizFCSIniciativaService,solicitacaoCancelamentoIndicadorService,genericDAO,perspectivaMapaEstrategicoDAO,logProcessoDAO,competenciaDAO,comentarioDAO,nivelHierarquicoDAO,matrizFCSIniciativaDAO,acompanhamentoIndicadorDAO,permissaoDAO,auditoriaGestaoDAO,emailHistoricoUsuarioDAO,mensagemDAO,matrizFCSIniciativaFatorDAO,comentarioItemDAO,auditoriaGestaoIndicadorItemDAO,mapaNegocioDAO,telaDAO,solicitacaoCancelamentoIndicadorDAO,perspectivaDAO,ocorrenciaDAO,itemModeloAuditoriaGestaoDAO,normaDAO,objetivoMapaEstrategicoDAO,papelDAO,planoGestaoDAO,mapaEstrategicoDAO,usuarioPapelDAO,matrizFCSFatorDAO,painelIndicadorFiltroDAO,anomaliaDAO,anexoIndicadorDAO,unidadeMedidaDAO,anexoAnomaliaDAO,competenciaOrganizacionalDAO,unidadeGerencialDAO,usuarioUnidadeGerencialDAO,indicadorDAO,mapaCompetenciaDAO,matrizFCSDAO,atividadeDAO,arquivoDAO,modeloAuditoriaGestaoDAO,parametrosSistemaDAO,solicitacaoRepactuacaoIndicadorDAO,fatorAvaliacaoDAO,auditoriaInternaDAO,iniciativaDAO,emailHistoricoDAO,requisitoNormaDAO,usuarioDAO,planoAcaoDAO,itemFatorAvaliacaoDAO,acaoPreventivaDAO,auditoriaGestaoIndicadorDAO,causaEfeitoDAO,objetivoEstrategicoDAO]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [config,authenticationConfig,dataSource,sessionFactory,hibernateTemplate,sqlErrorCodesTranslator,transactionTemplate,hibernateTransactionManager,jdbcTemplate,neoImageResolver,neoFormater,authorizationDAO,multipartResolver]; root of BeanFactory hierarchy}
+2019-05-13 01:38:20,805 INFO  [STDOUT] 01:38:20,805 INFO  [[/geplanes_bsc]] Closing WebApplicationContext of Spring FrameworkServlet 'sgm'
+2019-05-13 01:38:20,806 INFO  [STDOUT] 01:38:20,806 INFO  [AnnotationsXmlWebApplicationContext] Closing application context [WebApplicationContext for namespace 'sgm-servlet']
+2019-05-13 01:38:20,806 INFO  [STDOUT] 01:38:20,806 INFO  [DefaultListableBeanFactory] Destroying singletons in factory {org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans []; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [unidadeGerencialTreeController,ajaxCompetenciaOrganizacionalController,indexController,anomaliaReport,auditoriaGestaoReport,iniciativaPlanoAcaoReport,alcanceMetaInstitucionalReport,apresentacaoResultadosReport,mapaEstrategicoReport,anomaliaSinteticoPorStatusReport,pendenciaAnomaliaReport,anomaliaListagemReport,acaoPreventivaReport,mapaNegocioReport,auditoriaInternaReport,anomaliaDiagramaReport,diarioBordoReport,indicadoresEstrategicoReport,pendenciaCadastroReport,matrizFCSReport,mapaCompetenciaReport,desempenhoReport,unidadeGerencialAutoCompleteController,distribuicaoPesosIndicadoresProcess,sobreGeplanesProcess,envioEmailProcess,definicaoNegocioProcess,lancamentoValorRealProcess,sobreLinkComProcess,apresentacaoResultadosProcess,definicaoEstrategiaProcess,iniciativaPlanoAcaoProcess,solicitacaoRepactuacaoIndicadorProcess,logProcessoProcess,matrizFCSProcess,painelControle,definicaoCompetenciaProcess,solicitacaoCancelamentoIndicadorProcess,mapaNegocio,alterarSenhaProcess,distribuicaoPesosIndicadoresService,lancamentoValorRealService,controleCadastroService,parametrosSistemaCrud,graficosDashboardProcess,emailHistoricoCrud,unidadeMedidaCrud,papelCrud,nivelHierarquicoCrud,auditoriaInternaCrud,indicadorCrud,mensagemCrud,planoGestaoCrud,fatorAvaliacaoCrud,perspectivaCrud,acaoPreventivaCrud,objetivoEstrategicoCrud,modeloAuditoriaGestaoCrud,usuarioCrud,unidadeGerencialCrud,auditoriaGestaoCrud,anomaliaCrud,ocorrenciaCrud,normaCrud,competenciaOrganizacionalCrud,genericService,mapaNegocioService,unidadeMedidaService,modeloAuditoriaGestaoService,anexoIndicadorService,arquivoService,perspectivaService,requisitoNormaService,mapaCompetenciaService,auditoriaGestaoService,comentarioItemService,fatorAvaliacaoService,matrizFCSIniciativaFatorService,competenciaService,planoAcaoService,objetivoEstrategicoService,acompanhamentoIndicadorService,perspectivaMapaEstrategicoService,mapaEstrategicoService,unidadeGerencialService,anomaliaService,acaoPreventivaService,usuarioUnidadeGerencialService,normaService,iniciativaService,parametrosSistemaService,planoGestaoService,auditoriaGestaoIndicadorService,objetivoMapaEstrategicoService,comentarioService,auditoriaInternaService,usuarioPapelService,causaEfeitoService,mensagemService,itemModeloAuditoriaGestaoService,itemFatorAvaliacaoService,competenciaOrganizacionalService,atividadeService,emailHistoricoUsuarioService,indicadorService,solicitacaoRepactuacaoIndicadorService,ocorrenciaService,telaService,emailHistoricoService,matrizFCSService,nivelHierarquicoService,anexoAnomaliaService,logProcessoService,usuarioService,painelIndicadorFiltroService,permissaoService,papelService,auditoriaGestaoIndicadorItemService,matrizFCSFatorService,matrizFCSIniciativaService,solicitacaoCancelamentoIndicadorService,genericDAO,perspectivaMapaEstrategicoDAO,logProcessoDAO,competenciaDAO,comentarioDAO,nivelHierarquicoDAO,matrizFCSIniciativaDAO,acompanhamentoIndicadorDAO,permissaoDAO,auditoriaGestaoDAO,emailHistoricoUsuarioDAO,mensagemDAO,matrizFCSIniciativaFatorDAO,comentarioItemDAO,auditoriaGestaoIndicadorItemDAO,mapaNegocioDAO,telaDAO,solicitacaoCancelamentoIndicadorDAO,perspectivaDAO,ocorrenciaDAO,itemModeloAuditoriaGestaoDAO,normaDAO,objetivoMapaEstrategicoDAO,papelDAO,planoGestaoDAO,mapaEstrategicoDAO,usuarioPapelDAO,matrizFCSFatorDAO,painelIndicadorFiltroDAO,anomaliaDAO,anexoIndicadorDAO,unidadeMedidaDAO,anexoAnomaliaDAO,competenciaOrganizacionalDAO,unidadeGerencialDAO,usuarioUnidadeGerencialDAO,indicadorDAO,mapaCompetenciaDAO,matrizFCSDAO,atividadeDAO,arquivoDAO,modeloAuditoriaGestaoDAO,parametrosSistemaDAO,solicitacaoRepactuacaoIndicadorDAO,fatorAvaliacaoDAO,auditoriaInternaDAO,iniciativaDAO,emailHistoricoDAO,requisitoNormaDAO,usuarioDAO,planoAcaoDAO,itemFatorAvaliacaoDAO,acaoPreventivaDAO,auditoriaGestaoIndicadorDAO,causaEfeitoDAO,objetivoEstrategicoDAO]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [config,authenticationConfig,dataSource,sessionFactory,hibernateTemplate,sqlErrorCodesTranslator,transactionTemplate,hibernateTransactionManager,jdbcTemplate,neoImageResolver,neoFormater,authorizationDAO,multipartResolver]; root of BeanFactory hierarchy}
+2019-05-13 01:38:20,809 INFO  [STDOUT] 01:38:20,809 INFO  [[/geplanes_bsc]] Closing Spring root WebApplicationContext
+2019-05-13 01:38:20,809 INFO  [STDOUT] 01:38:20,809 INFO  [AnnotationsXmlWebApplicationContext] Closing application context [Root WebApplicationContext]
+2019-05-13 01:38:20,809 INFO  [STDOUT] 01:38:20,809 INFO  [DefaultListableBeanFactory] Destroying singletons in factory {org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [unidadeGerencialTreeController,ajaxCompetenciaOrganizacionalController,indexController,anomaliaReport,auditoriaGestaoReport,iniciativaPlanoAcaoReport,alcanceMetaInstitucionalReport,apresentacaoResultadosReport,mapaEstrategicoReport,anomaliaSinteticoPorStatusReport,pendenciaAnomaliaReport,anomaliaListagemReport,acaoPreventivaReport,mapaNegocioReport,auditoriaInternaReport,anomaliaDiagramaReport,diarioBordoReport,indicadoresEstrategicoReport,pendenciaCadastroReport,matrizFCSReport,mapaCompetenciaReport,desempenhoReport,unidadeGerencialAutoCompleteController,distribuicaoPesosIndicadoresProcess,sobreGeplanesProcess,envioEmailProcess,definicaoNegocioProcess,lancamentoValorRealProcess,sobreLinkComProcess,apresentacaoResultadosProcess,definicaoEstrategiaProcess,iniciativaPlanoAcaoProcess,solicitacaoRepactuacaoIndicadorProcess,logProcessoProcess,matrizFCSProcess,painelControle,definicaoCompetenciaProcess,solicitacaoCancelamentoIndicadorProcess,mapaNegocio,alterarSenhaProcess,distribuicaoPesosIndicadoresService,lancamentoValorRealService,controleCadastroService,parametrosSistemaCrud,graficosDashboardProcess,emailHistoricoCrud,unidadeMedidaCrud,papelCrud,nivelHierarquicoCrud,auditoriaInternaCrud,indicadorCrud,mensagemCrud,planoGestaoCrud,fatorAvaliacaoCrud,perspectivaCrud,acaoPreventivaCrud,objetivoEstrategicoCrud,modeloAuditoriaGestaoCrud,usuarioCrud,unidadeGerencialCrud,auditoriaGestaoCrud,anomaliaCrud,ocorrenciaCrud,normaCrud,competenciaOrganizacionalCrud,genericService,mapaNegocioService,unidadeMedidaService,modeloAuditoriaGestaoService,anexoIndicadorService,arquivoService,perspectivaService,requisitoNormaService,mapaCompetenciaService,auditoriaGestaoService,comentarioItemService,fatorAvaliacaoService,matrizFCSIniciativaFatorService,competenciaService,planoAcaoService,objetivoEstrategicoService,acompanhamentoIndicadorService,perspectivaMapaEstrategicoService,mapaEstrategicoService,unidadeGerencialService,anomaliaService,acaoPreventivaService,usuarioUnidadeGerencialService,normaService,iniciativaService,parametrosSistemaService,planoGestaoService,auditoriaGestaoIndicadorService,objetivoMapaEstrategicoService,comentarioService,auditoriaInternaService,usuarioPapelService,causaEfeitoService,mensagemService,itemModeloAuditoriaGestaoService,itemFatorAvaliacaoService,competenciaOrganizacionalService,atividadeService,emailHistoricoUsuarioService,indicadorService,solicitacaoRepactuacaoIndicadorService,ocorrenciaService,telaService,emailHistoricoService,matrizFCSService,nivelHierarquicoService,anexoAnomaliaService,logProcessoService,usuarioService,painelIndicadorFiltroService,permissaoService,papelService,auditoriaGestaoIndicadorItemService,matrizFCSFatorService,matrizFCSIniciativaService,solicitacaoCancelamentoIndicadorService,genericDAO,perspectivaMapaEstrategicoDAO,logProcessoDAO,competenciaDAO,comentarioDAO,nivelHierarquicoDAO,matrizFCSIniciativaDAO,acompanhamentoIndicadorDAO,permissaoDAO,auditoriaGestaoDAO,emailHistoricoUsuarioDAO,mensagemDAO,matrizFCSIniciativaFatorDAO,comentarioItemDAO,auditoriaGestaoIndicadorItemDAO,mapaNegocioDAO,telaDAO,solicitacaoCancelamentoIndicadorDAO,perspectivaDAO,ocorrenciaDAO,itemModeloAuditoriaGestaoDAO,normaDAO,objetivoMapaEstrategicoDAO,papelDAO,planoGestaoDAO,mapaEstrategicoDAO,usuarioPapelDAO,matrizFCSFatorDAO,painelIndicadorFiltroDAO,anomaliaDAO,anexoIndicadorDAO,unidadeMedidaDAO,anexoAnomaliaDAO,competenciaOrganizacionalDAO,unidadeGerencialDAO,usuarioUnidadeGerencialDAO,indicadorDAO,mapaCompetenciaDAO,matrizFCSDAO,atividadeDAO,arquivoDAO,modeloAuditoriaGestaoDAO,parametrosSistemaDAO,solicitacaoRepactuacaoIndicadorDAO,fatorAvaliacaoDAO,auditoriaInternaDAO,iniciativaDAO,emailHistoricoDAO,requisitoNormaDAO,usuarioDAO,planoAcaoDAO,itemFatorAvaliacaoDAO,acaoPreventivaDAO,auditoriaGestaoIndicadorDAO,causaEfeitoDAO,objetivoEstrategicoDAO]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [config,authenticationConfig,dataSource,sessionFactory,hibernateTemplate,sqlErrorCodesTranslator,transactionTemplate,hibernateTransactionManager,jdbcTemplate,neoImageResolver,neoFormater,authorizationDAO,multipartResolver]; root of BeanFactory hierarchy}
+2019-05-13 01:38:20,990 ERROR [STDERR] log4j:ERROR LogMananger.repositorySelector was null likely due to error in class reloading, using NOPLoggerRepository.
+2019-05-13 01:38:21,059 INFO  [org.jboss.resource.connectionmanager.ConnectionFactoryBindingService] Unbound ConnectionManager 'jboss.jca:service=DataSourceBinding,name=DefaultDS' from JNDI name 'java:DefaultDS'
+2019-05-13 01:38:21,187 INFO  [org.jboss.jdbc.HypersonicDatabase] Database standalone closed clean
+2019-05-13 01:38:21,192 INFO  [org.jboss.resource.connectionmanager.ConnectionFactoryBindingService] Unbound ConnectionManager 'jboss.jca:service=DataSourceBinding,name=127.0.0.1_geplanes_bsc_PostgreSQLDS' from JNDI name 'java:127.0.0.1_geplanes_bsc_PostgreSQLDS'
+2019-05-13 01:38:21,193 INFO  [org.jboss.resource.connectionmanager.ConnectionFactoryBindingService] Unbound ConnectionManager 'jboss.jca:service=DataSourceBinding,name=localhost_geplanes_bsc_PostgreSQLDS' from JNDI name 'java:localhost_geplanes_bsc_PostgreSQLDS'
+2019-05-13 01:38:21,194 INFO  [org.jboss.resource.connectionmanager.ConnectionFactoryBindingService] Unbound ConnectionManager 'jboss.jca:service=DataSourceBinding,name=geplanes_bsc_PostgreSQLDS' from JNDI name 'java:geplanes_bsc_PostgreSQLDS'
+2019-05-13 01:38:21,231 INFO  [org.apache.coyote.http11.Http11BaseProtocol] Pausing Coyote HTTP/1.1 on http-0.0.0.0-8080
+2019-05-13 01:38:22,236 INFO  [org.jboss.web.tomcat.tc5.StandardService] Stopping service jboss.web
+2019-05-13 01:38:22,240 INFO  [org.apache.coyote.http11.Http11BaseProtocol] Stopping Coyote HTTP/1.1 on http-0.0.0.0-8080
+2019-05-13 01:38:22,243 INFO  [org.jboss.web.tomcat.tc5.TomcatDeployer] undeploy, ctxPath=/, warUrl=.../deploy/jbossweb-tomcat55.sar/ROOT.war/
+2019-05-13 01:38:25,757 INFO  [org.jboss.system.server.Server] Shutdown complete

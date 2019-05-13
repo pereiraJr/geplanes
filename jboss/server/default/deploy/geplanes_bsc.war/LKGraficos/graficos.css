@@ -1,0 +1,16 @@
+#containerImpressao, .nvd3-svg{background: white;}
+#containerImpressao{
+	display: none;
+}
+
+.grafico-botao-imprimir{
+ 	position: absolute;
+  	right: 3px;
+  	top: 3px;
+  	opacity: 0.5;
+  	width: 16px;
+  	height: 16px;
+	background: url(imgs/baixar-pdf.png);
+	background-size: 16px 16px;
+	cursor: pointer;
+}
